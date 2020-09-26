@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+</head>
+<body onload="func()">   
+    
+    <div id="loader-bg">
+        
+<!--      <h1 class="click">Click Anywhere</h1>-->
+        
+                    <div class="loader">
+    
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </div>
+                
+    </div>     
+    
+    
+    <div class="container">
+        
+    <header class="header">
+        
+    <a class="link-title" href="">Minimalistic Website</a>    
+    
+    </header>
+        
+    <nav class="menu">
+        
+<!--                   <div class="burger"><i class="fa-fa-bars fa-2x"></i></div>-->
+
+        
+       <ul class="menu-list" id="menu-open">        
+                   
+           <li><a class="current" href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        
+           <li><a href="about.html"><i class="fa fa-users"></i>About us</a>
+           
+                <ul class="sub">
+           
+                <li><a href="#"><i class="fa fa-home"></i>Mission</a></li>
+               
+                <li><a href="#"><i class="fa fa-home"></i>Vision</a></li>
+               
+                <li><a href="#"><i class="fa fa-home"></i>Our Team</a></li>
+           
+                </ul>               
+           </li>
+                       
+           <li><a href="lab.html"><i class="fa fa-flask"></i> Laboratory</a>
+           
+<!--
+               <ul class="sub" id="sub1">
+                <li><a href="#"><i class="fa fa-android"></i>App Development</a></li>
+                <li><a href="#"><i class="fa fa-desktop"></i>Website Development</a></li>
+                <li class="s-three"><a href="#">Machine Learning and Artificial Intelligence</a></li>        
+               </ul>
+-->
+        
+           </li>
+        
+            <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+
+            <li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
+
+            <li class="special1"><a href="form.html"><i class="fa fa-user"></i>  Login</a></li>
+           
+            <li class="backslash"><a href="">/</a></li>   
+           
+            <li class="special2"><a href="form2.html">Sign Up</a></li>
+           
+        </ul>
+        
+            
+        <a href="#" class="burger" onclick="slide()"><i class="fa fa-bars"></i></a>
+            
+    
+                
+        </nav>
+        
+<!--
+        <aside class="SideBar" >
+        
+        <h1>Side Bar</h1>
+        
+        <h3>Connect with Us:</h3>
+            
+            <ul>
+        
+      <li>
+            <a href="https://facebook.com"><i class="fa fa-facebook-official"></i>  Facebook</a>
+            
+          </li>
+            
+
+    <li>
+        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i>
+            
+            Instagram</a>
+     
+        </li>
+            
+            <li>
+                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i>  Twitter</a>
+             </li>
+            <li>
+            <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i>  Youtube</a>   
+            </li>
+            
+            <li>
+                <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i>  Pinterest</a></li>
+        
+        </ul>            
+            
+            
+        <h2><a href="form.html">Login</a></h2>    
+            
+        <hr>
+            
+        <h2><a href="form2.html">Sign Up</a></h2>    
+            
+        <hr>    
+            
+            
+            
+            
+            
+        
+        </aside>
+        
+-->
+<!--
+        <nav class="nav-btn">
+        
+            <div class="nav-bar">
+            
+            <h4>The Nav</h4>
+                
+            </div>
+            
+            <ul class="nav-links">    
+                <li class="current"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
+        
+                <li><a href="about.html"><i class="fa fa-users"></i>About us</a></li>
+
+                <li><a href="services.html"><i class="fa fa-tasks"></i> Services</a></li>
+        
+                <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
+           
+                <li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
+           
+                <li><a href="form.html">Login</a></li>   
+            
+                <li><a href="form2.html">Sign Up</a></li>
+           
+            </ul>    
+            
+            <div class="burger">
+            
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+                        
+            </div>
+            
+        
+        </nav>
+-->
+        
+        <article class="main">
+        
+<!--        <img src="http://placehold.it/300*300">-->
+            
+<!--
+        <div id="home-image">
+            
+            <a href="Images/img1.jfif"><img src="Images/img1.jfif"></a>                    
+            
+        </div>
+-->
+            
+    <div class="box">        
+            
+     <div><button onclick="prev()" class="prev"><i class="fa fa-caret-left"></i></button></div>
+    
+    <img id="slider" src="https://www.doditsolutions.com/wp-content/uploads/doditdolutions-Android-ios-app-development-banner.png"/>
+    
+    <div><button onclick="next()" class="next"><i class="fa fa-caret-right"></i></button></div>
+        
+    </div>
+    
+            
+        <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
+        
+        </div>
+            
+        </article>
+        
+        <footer class="footer-style">
+        
+            <div class="footer-text">
+                
+                    <div class="col">
+                        
+                        <div class="footer-heading">
+                        
+                            <h2>Our Location</h2>
+                            
+                        </div>    
+                            
+                            <p>New Housing Colony</p>
+                            <p>S-type,S-35/10</p>
+                            <p>Adityapur,Jamshedpur</p>
+                            <p>T: +91 8409737777</p>
+                            <p>E: <a href="mailto:swastikrajsingh7777@gmail.com">swastikrajsingh7777@gmail.com</a></p>
+                            <a href="https://maps.app.goo.gl/DruZeJvxkfqF6pcD7" class="google-map" target="_blank"><i class="fa fa-map-marker"></i>     Google Maps</a>
+                        
+                    
+                    </div>
+                    
+                
+                    <div class="col">
+                    
+                        <div class="footer-heading"><h2 class="special-footer">Connect with Us</h2></div>
+                        
+                        <ul class="social">
+        
+                            <li><a href="https://facebook.com">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-facebook-official"></i>
+                                
+                                </a>
+                            </li>
+            
+                            <li><a href="https://www.instagram.com/?hl=en">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-instagram"></i>
+                                </a>
+                            </li>
+            
+                            <li><a href="https://www.twitter.com">
+                                
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+            
+                            <li><a href="https://www.youtube.com/c/DynamoGaming">
+                                
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <i class="fa fa-youtube-play"></i>
+                                
+                                </a>
+                            </li>
+            
+                        </ul>            
+                    
+                    </div>
+                    
+                    <div class="col">
+                    
+                        <div class="footer-heading"><h2>Services</h2></div>
+                        
+                        <ul class="services">
+                            
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Web App</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Android App</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>IOS App</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i>Website</a></li>
+                        
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="col">
+                    
+                        <div class="footer-heading"><h2>Additional Links</h2></div>
+                        
+                        <ul class="footer-menu">        
+                
+                            <li><a href="about.html"><i class="fa fa-users"></i> About us</a></li>
+        
+                            <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
+           
+                            <li><a href="gallery.html"><i class="fa fa-picture-o"></i> Gallery</a></li>
+           
+                        </ul>
+    
+                    </div>
+                    
+                    
+                    <div class="col">
+                    
+                        <div class="footer-heading"><h2>Sign Up for our Newsletter</h2></div>
+                    
+                        <p>Receive updates and news about our achievements,events and seminars.</p>
+                        
+                        <form class="newsletter">
+                        
+                            <input type="text" class="input-field-footer" placeholder="Email Id" required>
+                        
+                            <button type="submit" class="submit-btn-footer">Sign Up</button>
+                        
+                        </form>
+                        
+                    </div>
+                </div>
+            
+            
+                        
+                        
+                <div class="bottom">
+                        
+                        <div class="cprt">                    
+                            <p> &copy; 2030 Minimalistic Website , Design by <a href="http://www.wikipedia.org">Swastik</a></p>
+                        </div>
+                </div>   
+            
+                      
+        </footer>
+        
+    </div> 
+    
+     <script>
+         
+        var loading = document.getElementById('loader-bg');
+//    let timeout ;
+//         
+//    function delayTimer() {
+//        timeout = setTimeout(func,5000);
+//    }
+         
+        function func(){
+        loading.style.display = 'none';
+        }
+         
+//        var user=prompt("Please enter your name");
+//        alert(user);
+//        
+        function end() {
+        var result= confirm("Do you really want to leave this page");
+        if(result==true)
+            alert("Thanks for visiting");
+        else
+            alert("Thanks for staying with us");
+        }
+         
+        document.addEventListener("onunload",end);
+         
+         var images = ['https://www.doditsolutions.com/wp-content/uploads/doditdolutions-Android-ios-app-development-banner.png','https://previews.123rf.com/images/azaman357/azaman3571603/azaman357160300007/53371175-flat-designed-banner-for-web-development-with-long-shadows-.jpg','https://ipgeniussolutions.com/wp-content/uploads/2019/05/networking-solutions.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwtzOI6PLZ0N3RJgWawCK6A-kAv0YlfcF31g&usqp=CAU'];
+    var num=0;
+         
+    function next() {
+        var slider=document.getElementById("slider");
+        num++;
+        if(num>=images.length)
+            num=0;
+        slider.src=images[num];
+    }
+         
+    function prev() {
+        var slider=document.getElementById("slider");
+        num--;
+        if(num<0)
+            num=images.length-1;
+        slider.src=images[num];
+    }
+        
+        var t = setInterval(move,5000);
+         
+        var n=0; 
+        
+        function move() {
+            var pic=document.getElementById("slider");
+            n++;
+            if(n>=images.length)
+                n=0;
+            pic.src=images[n];
+
+        }   
+         
+        function slide(){
+            var x = document.getElementById('menu-open');
+            if (x.style.display == "none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="none";
+            }
+        }
+        
+        $(function() {
+         
+        $('.menu-list li').hover(function() {$('ul.sub',this).slideDown(500);},function() {$('ul.sub',this).slideUp(300);});
+//        $('#menu').on("click",slide(){
+//            $(".menu ul").toggleClass("showing");
+//        });
+        
+        });
+         
+    </script>
+    
+</body>
+</html>
