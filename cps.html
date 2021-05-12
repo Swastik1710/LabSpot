@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>C Programming Laboratory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body id="cps" onload="func()">
+
+    <section id="load">
+        <div class="loading">
+            <div class="blocks" style="--i:1;"></div>
+            <div class="blocks" style="--i:2;"></div>
+            <div class="blocks" style="--i:3;"></div>
+            <div class="blocks" style="--i:4;"></div>
+            <div class="blocks" style="--i:5;"></div>
+            <div class="blocks" style="--i:6;"></div>
+            <div class="blocks" style="--i:7;"></div>
+            <div class="blocks" style="--i:8;"></div>
+            <div class="blocks" style="--i:9;"></div>
+            <div class="blocks" style="--i:10;"></div>
+            <div class="blocks" style="--i:11;"></div>
+            <div class="blocks" style="--i:12;"></div>
+            <div class="blocks" style="--i:13;"></div>
+            <div class="blocks" style="--i:14;"></div>
+            <div class="blocks" style="--i:15;"></div>
+            <div class="blocks" style="--i:16;"></div>
+            <div class="blocks" style="--i:17;"></div>
+            <div class="blocks" style="--i:18;"></div>
+            <div class="blocks" style="--i:19;"></div>
+            <div class="blocks" style="--i:20;"></div>
+            <h3>Loading...</h3>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <div class="container">
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="index.html"><img src="./Images/logo1.png"><span>LabSpot</span></a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lab.html" class="current">Laboratory</a></li>
+                        <!-- <li><a href="discussions.html">Discussions</a></li> -->
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <!-- <li><a href="form1.html" class="login">Login</a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <article class="main">
+
+            <div class="exp-head">
+
+                <h1>Welcome to the Computer Programming Laboratory</h1>
+
+            </div>
+
+            <div class="exp">
+
+                <h2>Here is the list of experiments</h2>
+
+                <ul>
+                    <li><a class="imp" onclick="spl1(1)">1. Familiarization with computer hardware and programming
+                            environment</a>
+                        <ul id="opt1">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1e9-DY1HCR9P9ZUcHy3t19DKukeZUxjSV/view?usp=sharing">Theory</a>
+                            </li>
+                            <!-- <li><a href="#">Execution</a></li> -->
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(2)">2. Develop a program to solve simple computational problems
+                            using arithmetic expressions</a>
+                        <ul id="opt2">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1qKVR8Jbu9KM50f4fpzgIuv6KKa17HPyU/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11Wj539-eUnPXhiAR6iQjj00otBSZf3Ly/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(3)">3. Develop a program to compute the roots of a quadratic
+                            equation</a>
+                        <ul id="opt3">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1EoVNYiM2xGzFn5X8_aA0WIVpMEDALZ94/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11XUYHI-FH-SJwDtkS_QIyrCR0FZ-ySum/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(4)">4. Develop a program to find the reverse of a positive
+                            integer and check for palindrome</a>
+                        <ul id="opt4">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1Uisyy6uKTnzpXQjxdsATVPJUs7KQqzHT/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11cy4rNpsgkjl9Fq8i2AX7j8tI6JbdHY6/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(5)">5. Develop a program to read the name of the user, number of
+                            units consumed and print out the charges</a>
+                        <ul id="opt5">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1JzJUdv3L1u3FDzpE3PMNeaDiIkv6JDKr/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11h-7I0KR4CeZ8I2h8c2kb4KauXRM7cH3/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(6)">6. Introduce 1D Array manipulation and implement Binary
+                            search</a>
+                        <ul id="opt6">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1-49FoY99MvAzsZzjPUif6LrZK8uDg9JU/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11m98A6leXn4cxYWmhq73ia6OH61zNHph/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(7)">7. Implement using functions to check whether the given
+                            number is prime</a>
+                        <ul id="opt7">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1fuVHYQRWF0ghUZm3X9e-zSk7nbHTLoRr/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11nuv6JztHKN0O4SjpJ4fsvySl3SFaaaO/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(8)">8. Develop a program to introduce 2D Array manipulation and
+                            implement Matrix multiplication</a>
+                        <ul id="opt8">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1qnglasKXrY4MLkXCRsIyPBt6btXq0Asq/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11qZvo2T9SiDjl1atce9G485iib-IqC-K/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(9)">9. Write a program that implements the Taylor series
+                            approximation</a>
+                        <ul id="opt9">
+                            <li><a
+                                    href="https://drive.google.com/file/d/10_-iTO-cTkkfg7V-p0U7SoNATBVpnMuv/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/11vGFjtDh89HCti81aXSO4kZbXMfUrdIu/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(10)">10. Write functions to implement string operations such as
+                            compare, concatenate, string length</a>
+                        <ul id="opt10">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1UFs3sQ51DYBB5CN_gQCbGRNxqO2mifUF/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/120J9GN_SNUIqkDzC1SYp3yCcXxaxH7-i/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(11)">11. Implementation of Bubble Sorting Technique</a>
+                        <ul id="opt11">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1iH8fgJrbEtMFLMCO_OM0ErrrduosYokp/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/12HnWq0RRar3IAS5PjFXWm9EV7cjBrHqy/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(12)">12. Develop a program to find the square root of a given
+                            number N and execute for all possible inputs</a>
+                        <ul id="opt12">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1A_0bqO2xJVMiSkaZ8cBYH8MVm9yN5wgE/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/12N9RYT7pdXkrGPREM9eijP9UuxB1C2lS/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(13)">13. Implement array of structures to read, write, compute
+                            average marks for a class of N students</a>
+                        <ul id="opt13">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1iLW0N_cvxcmnmHJJqZGyaEz-N1qhtGmk/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/12O4qo-yBlxfp5SyUzbN2REUOsOHbNarI/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(14)">14. Develop a program using pointers to compute the sum,
+                            mean and standard deviation of all elements</a>
+                        <ul id="opt14">
+                            <li><a
+                                    href="https://drive.google.com/file/d/17kBsGqOhkLZnq5OWgHDSaTVhbiquGFFV/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/12PRWKbI75zdHEVuvEuYWQP9it4aFTW3n/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(15)">15. Implement Recursive functions for Binary to Decimal
+                            Conversion</a>
+                        <ul id="opt15">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1Ec7YLu5UXv-e6vp81o1XiSgIIaxpWRa8/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a href="https://drive.google.com/file/d/12SIkg_-NUCTALM-_jdo6W0jD5IAeAKvm/view?usp=sharing">Execution</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(16)">16. Program to read from name.txt and usn.txt and write the
+                            contents of both the files onto output.txt</a>
+                        <ul id="opt16">
+                            <li><a
+                                    href="https://drive.google.com/file/d/19azFvX2-7oCKwgK4qdFr1mxaCu3BfUKv/view?usp=sharing">Theory</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </article>
+
+
+        <footer>
+            <div class="main-content">
+
+                <div class="left box">
+                    <div class="footer-logo">
+                        <img src="./Images/logo1.png">
+                    </div>
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Bengaluru, Karnataka</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+91 7760484255</span>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:swastikrajsingh7777@gmail.com"><span class="fas fa-envelope"></span></a>
+                            <span class="text">swastikrajsingh7777@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Connect with Us</h2>
+                    <div class="content">
+                        <div class="center">
+                            <div class="icons">
+                                <li class="fill-back"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                            class="fab fa-twitter"></span></a></li>
+                                <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                            class="fab fa-instagram"></span></a></li>
+                                <li class="fill-back"><a
+                                        href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                            class="fab fa-linkedin-in"></span></a></li>
+                                <li class="fill-back git"><a href="https://github.com/Swastik1710"><span
+                                            class="fab fa-github"></span></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="additional">Additional Links</h2>
+                    <div class="content"></div>
+                    <div class="center-bottom-left">
+                        <div>
+                            <a href="about.html"><span class="fas fa-user"></span></a>
+                            <span class="text">About Us</span>
+                        </div>
+                        <div>
+                            <a href="feedback.html"><span class="fas fa-comments"></span></a>
+                            <span class="text">Feedback</span>
+                        </div>
+                    </div>
+                    <div class="center-bottom-right">
+                        <div>
+                            <a href="lab.html"><span class="fas fa-flask"></span></a>
+                            <span class="text">Laboratory</span>
+                        </div>
+                        <div>
+                            <a href="discussions.html"><span class="fas fa-users"></span></a>
+                            <span class="text">Discussions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="https://formspree.io/f/mpzkqbjz" method="POST">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" placeholder="Enter your Email-id" name="_replyto" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea class="msg" rows="2" cols="25" placeholder="Enter your message!"
+                                    name="Message" required></textarea>
+                                <!-- <changeit rows="2" cols="25" required></changeit> -->
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Created By <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/">Swastik</a> | </span>
+                    <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+
+        var loading = document.getElementById("load");
+        function func() {
+            loading.style.display = "none";
+        }
+
+        $('.icons li').click(function () {
+            $(this).toggleClass("shadow-2").siblings();
+            $(this).toggleClass("fill-color").siblings();
+            $(this).toggleClass("fill-back").siblings();
+        });
+
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+
+        var sp1 = document.getElementById("opt1");
+        var sp2 = document.getElementById("opt2");
+        var sp3 = document.getElementById("opt3");
+        var sp4 = document.getElementById("opt4");
+        var sp5 = document.getElementById("opt5");
+        var sp6 = document.getElementById("opt6");
+        var sp7 = document.getElementById("opt7");
+        var sp8 = document.getElementById("opt8");
+        var sp9 = document.getElementById("opt9");
+        var sp10 = document.getElementById("opt10");
+        var sp11 = document.getElementById("opt11");
+        var sp12 = document.getElementById("opt12");
+        var sp13 = document.getElementById("opt13");
+        var sp14 = document.getElementById("opt14");
+        var sp15 = document.getElementById("opt15");
+        var sp16 = document.getElementById("opt16");
+        function spl1(val) {
+
+            switch (val) {
+                case 1:
+                    if (sp1.style.display === "none") {
+                        sp1.style.display = "block";
+                    }
+                    else {
+                        sp1.style.display = "none";
+                    }
+                    break;
+                case 2:
+                    if (sp2.style.display == "none") {
+                        sp2.style.display = "block";
+                    }
+                    else {
+                        sp2.style.display = "none";
+                    }
+                    break;
+                case 3:
+                    if (sp3.style.display == "none") {
+                        sp3.style.display = "block";
+                    }
+                    else {
+                        sp3.style.display = "none";
+                    }
+                    break;
+                case 4:
+                    if (sp4.style.display == "none") {
+                        sp4.style.display = "block";
+                    }
+                    else {
+                        sp4.style.display = "none";
+                    }
+                    break;
+                case 5:
+                    if (sp5.style.display == "none") {
+                        sp5.style.display = "block";
+                    }
+                    else {
+                        sp5.style.display = "none";
+                    }
+                    break;
+                case 6:
+                    if (sp6.style.display == "none") {
+                        sp6.style.display = "block";
+                    }
+                    else {
+                        sp6.style.display = "none";
+                    }
+                    break;
+                case 7:
+                    if (sp7.style.display == "none") {
+                        sp7.style.display = "block";
+                    }
+                    else {
+                        sp7.style.display = "none";
+                    }
+                    break;
+                case 8:
+                    if (sp8.style.display == "none") {
+                        sp8.style.display = "block";
+                    }
+                    else {
+                        sp8.style.display = "none";
+                    }
+                    break;
+                case 9:
+                    if (sp9.style.display == "none") {
+                        sp9.style.display = "block";
+                    }
+                    else {
+                        sp9.style.display = "none";
+                    }
+                    break;
+                case 10:
+                    if (sp10.style.display == "none") {
+                        sp10.style.display = "block";
+                    }
+                    else {
+                        sp10.style.display = "none";
+                    }
+                    break;
+                case 11:
+                    if (sp11.style.display == "none") {
+                        sp11.style.display = "block";
+                    }
+                    else {
+                        sp11.style.display = "none";
+                    }
+                    break;
+                case 12:
+                    if (sp12.style.display == "none") {
+                        sp12.style.display = "block";
+                    }
+                    else {
+                        sp12.style.display = "none";
+                    }
+                    break;
+                case 13:
+                    if (sp13.style.display == "none") {
+                        sp13.style.display = "block";
+                    }
+                    else {
+                        sp13.style.display = "none";
+                    }
+                    break;
+                case 14:
+                    if (sp14.style.display == "none") {
+                        sp14.style.display = "block";
+                    }
+                    else {
+                        sp14.style.display = "none";
+                    }
+                    break;
+                case 15:
+                    if (sp15.style.display == "none") {
+                        sp15.style.display = "block";
+                    }
+                    else {
+                        sp15.style.display = "none";
+                    }
+                    break;
+                case 16:
+                    if (sp16.style.display == "none") {
+                        sp16.style.display = "block";
+                    }
+                    else {
+                        sp16.style.display = "none";
+                    }
+                    break;
+            }
+        }
+        mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,380 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>About Us</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
+    <script src="./js/scripts.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
+
 <body id="about-page" onload="func()">
-        
-       <div id="loader-bg">
-      
-                    <div class="loader">
-    
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+    <!-- <section id="load">
+        <div class="loading">
+            <div class="blocks" style="--i:1;"></div>
+            <div class="blocks" style="--i:2;"></div>
+            <div class="blocks" style="--i:3;"></div>
+            <div class="blocks" style="--i:4;"></div>
+            <div class="blocks" style="--i:5;"></div>
+            <div class="blocks" style="--i:6;"></div>
+            <div class="blocks" style="--i:7;"></div>
+            <div class="blocks" style="--i:8;"></div>
+            <div class="blocks" style="--i:9;"></div>
+            <div class="blocks" style="--i:10;"></div>
+            <div class="blocks" style="--i:11;"></div>
+            <div class="blocks" style="--i:12;"></div>
+            <div class="blocks" style="--i:13;"></div>
+            <div class="blocks" style="--i:14;"></div>
+            <div class="blocks" style="--i:15;"></div>
+            <div class="blocks" style="--i:16;"></div>
+            <div class="blocks" style="--i:17;"></div>
+            <div class="blocks" style="--i:18;"></div>
+            <div class="blocks" style="--i:19;"></div>
+            <div class="blocks" style="--i:20;"></div>
+            <h3>Loading...</h3>
+        </div>
+    </section> -->
 
-                    </div>
-                </div>    
-    
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
     <div class="container">
-    <header class="header">
-        
-    <a class="link-title" href="/">Minimalistic Website</a>    
-    
-    </header>
-        
-     <nav class="menu">
-        
-       <ul class="menu-list">        
-        
-           <li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        
-           <li><a class="current" href="about.html"><i class="fa fa-users"></i>About us</a>
-           
-                <ul class="sub">
-           
-                <li><a href="#"><i class="fa fa-home"></i>Mission</a></li>
-               
-                <li><a href="#"><i class="fa fa-home"></i>Vision</a></li>
-               
-                <li><a href="#"><i class="fa fa-home"></i>Our Team</a></li>
-           
-                </ul>               
-           </li>
-                       
-           <li><a href="lab.html"><i class="fa fa-flask"></i> Laboratory</a>
-           
-<!--
-               <ul class="sub" id="sub1">
-                <li><a href="#"><i class="fa fa-android"></i>App Development</a></li>
-                <li><a href="#"><i class="fa fa-desktop"></i>Website Development</a></li>
-                <li class="s-three"><a href="#">Machine Learning and Artificial Intelligence</a></li>        
-               </ul>
--->
-        
-           </li>
-        
-        
-        <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
-           
-        <li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
-            
-        <li class="special1"><a href="form.html"><i class="fa fa-user"></i>  Login</a></li>
-        <li class="backslash"><a href="">/</a></li>   
-        <li class="special2"><a href="form2.html">Sign Up</a></li>
-           
-        </ul>
-                
-        </nav>
-        
-        
-        <div class="inner-banner">
-        
-            <img src="Images/abt.png">
-            <div class="inner-text">
-                <h2>About Us<br></h2>
-                <h3><a href="index.html">Home</a> <i class="fa fa-angle-right"></i> About Us</h3>
-            </div>
-        
-        </div>
-        
-        
-        
-<!--
-        <aside class="SideBar" >
-        
-        <h3>Connect with Us:</h3>
-            
-            <ul>
-        
-      <li>
-            <a href="https://facebook.com"><i class="fa fa-facebook-official"></i>  Facebook</a>
-            
-          </li>
-            
-
-    <li>
-        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i>
-            
-            Instagram</a>
-     
-        </li>
-            
-            <li>
-                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i>  Twitter</a>
-             </li>
-            <li>
-            <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i>  Youtube</a>   
-            </li>
-        <li>
-                <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i>  Pinterest</a></li>
-                
-        </ul>            
-            
-           <h2><a href="form.html">Login</a></h2>    
-            
-        <hr>
-            
-        <h2><a href="form2.html">Sign Up</a></h2>    
-            
-        <hr>   
-        
-        </aside>
--->
-        
-        <article class="main">
-            
-     
-        <div id="home-image">
-            
-            <img src="Images/img1.jfif">            
-            
-        </div>
-        
-<!--
-        <div id="profile-info">
-            <h2>Swastik Raj Singh</h2>
-            <h2>Title: CEO of ProductsIt INC</h2>
-            <h2>Age:20</h2>
-            </div>    
--->
-            
-        <div class="description">
-            
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
-            
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
-            
-        </div>
-            
-        <div class="abt-head">
-            <h1>Meet Our Team Members</h1>
-        </div>
-            
-        <div class="card">
-            <div class="front"><img src="Images/card1.jpeg"></div>
-            <div class="back">
-                <div class="details">
-                    <h2>Swastik Raj Singh<br><span>Senior Designer</span></h2>
-                    <div class="icons">
-                        <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>  
-                        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i></a>   
-                    </div>
-                </div>    
-            </div>
-        </div>
-        
-            
-        <div class="card" id="c2">
-            <div class="front"><img src="Images/card2.jpg"></div>
-            <div class="back">
-                <div class="details">
-                    <h2>Yash Raj Singh<br><span>Senior Designer</span></h2>
-                    <div class="icons">
-                        <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>  
-                        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i></a>   
-                    </div>
-                </div>    
-            </div>
-        </div>
-        
-            
-        <div class="card" id="c3">
-            <div class="front"><img src="Images/card3.jpg"></div>
-            <div class="back">
-                <div class="details">
-                    <h2>Shaheer Hasan<br><span>Senior Designer</span></h2>
-                    <div class="icons">
-                        <a href="https://facebook.com"><i class="fa fa-facebook-official"></i></a>  
-                        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i></a>
-                        <a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i></a>   
-                    </div>
-                </div>    
-            </div>
-        </div>
-            
-        </article>
-        
-        <footer class="footer-style">
-            
-                <div class="footer-text">
-                
-                    <div class="col">
-                        
-                        <div class="footer-heading">
-                        
-                            <h2>Our Location</h2>
-                        </div>    
-                            
-                            <p>New Housing Colony</p>
-                            <p>S-type,S-35/10</p>
-                            <p>Adityapur,Jamshedpur</p>
-                            <p>T: +91 8409737777</p>
-                            <p>E: <a href="mailto:swastikrajsingh7777@gmail.com">swastikrajsingh7777@gmail.com</a></p>
-                            <a href="https://maps.app.goo.gl/DruZeJvxkfqF6pcD7" class="google-map" target="_blank"><i class="fa fa-map-marker"></i>     Google Maps</a>
-                        
-                    
-                    </div>
-                    
-                
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2 class="special-footer">Connect with Us</h2></div>
-                        
-                        <ul class="social">
-        
-                            <li><a href="https://facebook.com">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-facebook-official"></i>
-                                
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.instagram.com/?hl=en">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.twitter.com">
-                                
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.youtube.com/c/DynamoGaming">
-                                
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-youtube-play"></i>
-                                
-                                </a>
-                            </li>
-            
-                        </ul>            
-                    
-                    </div>
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Services</h2></div>
-                        
-                        <ul class="services">
-                            
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Web App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Android App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>IOS App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Website</a></li>
-                        
-                        </ul>
-                        
-                    </div>
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Additional Links</h2></div>
-                        
-                        <ul class="footer-menu">        
-                
-                            <li><a href="about.html"><i class="fa fa-users"></i> About us</a></li>
-        
-                            <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
-           
-                            <li><a href="gallery.html"><i class="fa fa-picture-o"></i> Gallery</a></li>
-           
-                        </ul>
-    
-                    </div>
-                    
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Sign Up for our Newsletter</h2></div>
-                    
-                        <p>Receive updates and news about our achievements,events and seminars.</p>
-                        
-                        <form class="newsletter">
-                        
-                            <input type="text" class="input-field-footer" placeholder="Email Id" required>
-                        
-                            <button type="submit" class="submit-btn-footer">Sign Up</button>
-                        
-                        </form>
-                        
-                    </div>
-                        
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="index.html"><img src="./Images/logo1.png"><span>LabSpot</span></a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html" class="current">About</a></li>
+                        <li><a href="lab.html">Laboratory</a></li>
+                        <!-- <li><a href="discussions.html">Discussions</a></li> -->
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <!-- <li><a href="form1.html" class="login">Login</a></li> -->
+                    </ul>
                 </div>
-            
-                <div class="bottom">
-                        
-                        <div class="cprt">                    
-                            <p> &copy; 2030 Minimalistic Website , Design by <a href="http://www.wikipedia.org">Swastik</a></p>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="history">
+                <h1>HISTORY</h1>
+                <h2>It was during the First Semester Lab Externals, when we realized that recalling all the experiments
+                    we conducted during the regular lab sessions was the most difficult task and was the main reason
+                    behind us not
+                    being able to score good marks.</h2>
+                <h2>This led us to the idea of having a portal where one can find all experiment related
+                    Theory, Explanation Videos and Viva questions for
+                    all the subjects of all semesters alltogether, saving us the time and hardwork involved in searching
+                    the perfect Explanation Vidoes, Modal Procedures or Viva Questions on the internet.
+                </h2>
+            </div>
+        </div>
+
+        <div class="team">
+
+        </div>
+
+        <div class="imgbox">
+            <div class="wrapper1">
+                <div class="gallery">
+                    <div class="image"><span><img style="height: 260px;" src="Images/abt1.jpg" alt=""></span></div>
+                    <div class="image"><span><img style="border: 2px solid black;" src="Images/abt2.png" alt=""></span>
+                    </div>
+                    <div class="image"><span><img style="height: 245px;" src="Images/abt3.jpg" alt=""></span></div>
+                    <div class="image"><span><img style="height: 245px;" src="Images/abt4.jpeg" alt=""></span></div>
+                    <div class="image"><span><img style="height: 245px;" src="Images/img-5.jpg" alt=""></span></div>
+                    <div class="image"><span><img src="Images/img-6.jpg" alt=""></span></div>
+                </div>
+            </div>
+            <div class="preview-box">
+                <div class="details">
+                    <span class="title">Image <p class="current-img"></p> of <p class="total-img"></p></span>
+                    <span class="icon fas fa-times"></span>
+                </div>
+                <div class="image-box">
+                    <div class="slide prev"><i class="fas fa-angle-left"></i></div>
+                    <div class="slide next"><i class="fas fa-angle-right"></i></div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="shadow"></div>
+        </div>
+
+        <div class="main">
+
+            <div class="description">
+
+                <h1>CONTRIBUTIONS</h1>
+
+                <h2>The sole purpose behind making this website is to help students out and spread knowledge all over
+                    the globe, cause <span style="color: green;">'Knowledge grows with Sharing'</span>.
+                    Being said so, not only the study materials but also the <a
+                        href="https://github.com/Swastik1710">SOURCE CODE</a> of this Website is available for all to
+                    use, learn and contribute, thus promoting Open Source Software.</h2>
+
+                <h2>We are open to contributions of all types, be it related to Study materials or the Website
+                    itself.Head over to our <a href="https://github.com/Swastik1710">Github Repository</a> and get
+                    started.</h2>
+
+                <h2>Also, we would love hearing back from you. So, head over to our <a href="feedback.html">Feedback</a>
+                    page and let us know your thoughts.</h2>
+
+            </div>
+
+            <div class="wrapper2">
+                <div class="team-name">
+                    <h1>Meet Our Team Members</h1>
+                    <!-- <h2>We call ourselves >>> "405:FOUND"</h2> -->
+                </div>
+                <div class="team">
+                    <div class="team_member">
+                        <div class="team_img">
+                            <img src="./Images/team1.png" alt="Team_image">
                         </div>
-                </div>     
-            
+                        <h3>Paul Doe</h3>
+                        <p class="role">Frontend Developer</p>
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora,
+                            voluptatum
+                            quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis
+                            dignissimos.</p>
+                        <div class="icons1">
+                            <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                        class="fab fa-twitter"></span></a></li>
+                            <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                        class="fab fa-instagram"></span></a></li>
+                            <li class="fill-back"><a
+                                    href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                        class="fab fa-linkedin-in"></span></a></li>
+                        </div>
+                    </div>
+                    <div class="team_member">
+                        <div class="team_img">
+                            <img src="./Images/team2.png" alt="Team_image">
+                        </div>
+                        <h3>Rosie Meg</h3>
+                        <p class="role">Backend Developer</p>
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora,
+                            voluptatum
+                            quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis
+                            dignissimos.</p>
+                        <div class="icons1">
+                            <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                        class="fab fa-twitter"></span></a></li>
+                            <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                        class="fab fa-instagram"></span></a></li>
+                            <li class="fill-back"><a
+                                    href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                        class="fab fa-linkedin-in"></span></a></li>
+                        </div>
+                    </div>
+                    <div class="team_member">
+                        <div class="team_img">
+                            <img src="./Images/team3.png" alt="Team_image">
+                        </div>
+                        <h3>Alex Wood</h3>
+                        <p class="role">Backend Developer</p>
+                        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quaerat tempora,
+                            voluptatum
+                            quas facere dolorum aut cumque nihil nulla harum nemo distinctio quam blanditiis
+                            dignissimos.</p>
+                        <div class="icons1">
+                            <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                        class="fab fa-twitter"></span></a></li>
+                            <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                        class="fab fa-instagram"></span></a></li>
+                            <li class="fill-back"><a
+                                    href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                        class="fab fa-linkedin-in"></span></a></li>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <div class="main-content">
+                <div class="left box">
+                    <div class="footer-logo">
+                        <img src="./Images/logo1.png">
+                    </div>
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Bengaluru, Karnataka</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+91 7760484255</span>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:swastikrajsingh7777@gmail.com"><span class="fas fa-envelope"></span></a>
+                            <span class="text">swastikrajsingh7777@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Connect with Us</h2>
+                    <div class="content">
+                        <div class="center">
+                            <div class="icons">
+                                <li class="fill-back"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                            class="fab fa-twitter"></span></a></li>
+                                <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                            class="fab fa-instagram"></span></a></li>
+                                <li class="fill-back"><a
+                                        href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                            class="fab fa-linkedin-in"></span></a></li>
+                                <li class="fill-back git"><a href="https://github.com/Swastik1710"><span
+                                            class="fab fa-github"></span></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="additional">Additional Links</h2>
+                    <div class="content"></div>
+                    <div class="center-bottom-left">
+                        <div>
+                            <a href="about.html"><span class="fas fa-user"></span></a>
+                            <span class="text">About Us</span>
+                        </div>
+                        <div>
+                            <a href="feedback.html"><span class="fas fa-comments"></span></a>
+                            <span class="text">Feedback</span>
+                        </div>
+                    </div>
+                    <div class="center-bottom-right">
+                        <div>
+                            <a href="lab.html"><span class="fas fa-flask"></span></a>
+                            <span class="text">Laboratory</span>
+                        </div>
+                        <div>
+                            <a href="discussions.html"><span class="fas fa-users"></span></a>
+                            <span class="text">Discussions</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="right box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="https://formspree.io/f/mpzkqbjz" method="POST">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" placeholder="Enter your Email-id" name="_replyto" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea class="msg" rows="2" cols="25" placeholder="Enter your message!"
+                                    name="Message" required></textarea>
+                                <!-- <changeit rows="2" cols="25" required></changeit> -->
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Created By <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/">Swastik</a> | </span>
+                    <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+                </center>
+            </div>
         </footer>
-        
-    </div> 
-    
-   <script>
-    var loading = document.getElementById('loader-bg');
-        
-    function func(){
-        loading.style.display = 'none';
-    }
-       
-    $(function() {
-         
-        $('.menu-list li').hover(function() {$('ul.sub',this).slideDown(500);},function() {$('ul.sub',this).slideUp(300);});       
-        $('.card').flip({
-            trigger: 'hover',
-            axis:'x'
+
+    </div>
+
+    <script>
+        var loading = document.getElementById('load');
+
+        function func() {
+            loading.style.display = 'none';
+        }
+
+        $('.icons li').click(function () {
+            $(this).toggleClass("shadow-2").siblings();
+            $(this).toggleClass("fill-color").siblings();
+            $(this).toggleClass("fill-back").siblings();
         });
-    });
-       
-       
-       
-       
-       
-       
-       
-       
-    </script>  
-    
+
+        $('.icons1 li').click(function () {
+            $(this).toggleClass("shadow-2").siblings();
+            $(this).toggleClass("fill-color").siblings();
+            $(this).toggleClass("fill-back").siblings();
+        });
+
+        //getting all required elements
+        const gallery = document.querySelectorAll(".image"),
+            previewBox = document.querySelector(".preview-box"),
+            previewImg = previewBox.querySelector("img"),
+            closeIcon = previewBox.querySelector(".icon"),
+            currentImg = previewBox.querySelector(".current-img"),
+            totalImg = previewBox.querySelector(".total-img"),
+            shadow = document.querySelector(".shadow");
+
+        window.onload = () => {
+            for (let i = 0; i < gallery.length; i++) {
+                totalImg.textContent = gallery.length; //passing total img length to totalImg variable
+                let newIndex = i; //passing i value to newIndex variable
+                let clickedImgIndex; //creating new variable
+
+                gallery[i].onclick = () => {
+                    clickedImgIndex = i; //passing cliked image index to created variable (clickedImgIndex)
+                    function preview() {
+                        currentImg.textContent = newIndex + 1; //passing current img index to currentImg varible with adding +1
+                        let imageURL = gallery[newIndex].querySelector("img").src; //getting user clicked img url
+                        previewImg.src = imageURL; //passing user clicked img url in previewImg src
+                    }
+                    preview(); //calling above function
+
+                    const prevBtn = document.querySelector(".prev");
+                    const nextBtn = document.querySelector(".next");
+                    if (newIndex == 0) { //if index value is equal to 0 then hide prevBtn
+                        prevBtn.style.display = "none";
+                    }
+                    if (newIndex >= gallery.length - 1) { //if index value is greater and equal to gallery length by -1 then hide nextBtn
+                        nextBtn.style.display = "none";
+                    }
+                    prevBtn.onclick = () => {
+                        newIndex--; //decrement index
+                        if (newIndex == 0) {
+                            preview();
+                            prevBtn.style.display = "none";
+                        } else {
+                            preview();
+                            nextBtn.style.display = "block";
+                        }
+                    }
+                    nextBtn.onclick = () => {
+                        newIndex++; //increment index
+                        if (newIndex >= gallery.length - 1) {
+                            preview();
+                            nextBtn.style.display = "none";
+                        } else {
+                            preview();
+                            prevBtn.style.display = "block";
+                        }
+                    }
+                    document.querySelector("body").style.overflow = "hidden";
+                    previewBox.classList.add("show");
+                    shadow.style.display = "block";
+                    closeIcon.onclick = () => {
+                        newIndex = clickedImgIndex; //assigning user first clicked img index to newIndex
+                        prevBtn.style.display = "block";
+                        nextBtn.style.display = "block";
+                        previewBox.classList.remove("show");
+                        shadow.style.display = "none";
+                        document.querySelector("body").style.overflow = "scroll";
+                    }
+                }
+            }
+        }
+
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+        mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
+
 </html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>DS Laboratory</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+</head>
+
+<body id="ds" onload="func()">
+
+    <section id="load">
+        <div class="loading">
+            <div class="blocks" style="--i:1;"></div>
+            <div class="blocks" style="--i:2;"></div>
+            <div class="blocks" style="--i:3;"></div>
+            <div class="blocks" style="--i:4;"></div>
+            <div class="blocks" style="--i:5;"></div>
+            <div class="blocks" style="--i:6;"></div>
+            <div class="blocks" style="--i:7;"></div>
+            <div class="blocks" style="--i:8;"></div>
+            <div class="blocks" style="--i:9;"></div>
+            <div class="blocks" style="--i:10;"></div>
+            <div class="blocks" style="--i:11;"></div>
+            <div class="blocks" style="--i:12;"></div>
+            <div class="blocks" style="--i:13;"></div>
+            <div class="blocks" style="--i:14;"></div>
+            <div class="blocks" style="--i:15;"></div>
+            <div class="blocks" style="--i:16;"></div>
+            <div class="blocks" style="--i:17;"></div>
+            <div class="blocks" style="--i:18;"></div>
+            <div class="blocks" style="--i:19;"></div>
+            <div class="blocks" style="--i:20;"></div>
+            <h3>Loading...</h3>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+    <div class="container">
+        <div class="wrapper">
+            <nav>
+                <input type="checkbox" id="show-menu">
+                <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+                <div class="content">
+                    <div class="logo"><a href="index.html"><img src="./Images/logo1.png"><span>LabSpot</span></a></div>
+                    <ul class="links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lab.html" class="current">Laboratory</a></li>
+                        <!-- <li><a href="discussions.html">Discussions</a></li> -->
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <!-- <li><a href="form1.html" class="login">Login</a></li> -->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <article class="main">
+
+            <div class="exp-head">
+
+                <h1>Welcome to the Data Structures Laboratory</h1>
+
+            </div>
+
+            <div class="exp">
+
+                <h2>Here is the list of experiments</h2>
+
+                <ul>
+                    <li><a class="imp" onclick="spl1(1)">1. ARRAY OPERATIONS</a>
+                        <ul id="opt1">
+                            <li><a
+                                    href="https://drive.google.com/file/d/14z9CJckvp-MM681WNaRPFvlaY_eVRenE/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1W8YoJX5PetoVL06NNS6Efnp0W6JGlXZ8/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(2)">2. PATTERN MATCHING</a>
+                        <ul id="opt2">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1EU0imgeOqcdh6wJzJL0kaE6DNA1CZwE_/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1ijRXxLkKBG7uokuGQYVChwkpDkFS1t-o/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(3)">3. STACK OPERATIONS</a>
+                        <ul id="opt3">
+                            <li><a
+                                    href="https://drive.google.com/file/d/19dLfW9Z3c5jwpoAvociDrLfTTXTfZiWD/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1PtW9P8jR6tcQyDmR2msgz3A0MIq6AV1S/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(4)">4. INFIX TO POSTFIX</a>
+                        <ul id="opt4">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1Pk951H0HqfyDl5Px81AEWK7BNcglQz-B/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1yIk1aYYZp23CeuKBXXVZY_TIBS8Wtg1G/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(5)">5. SUFFIX EXPRESSION & TOWER OF HANOI</a>
+                        <ul id="opt5">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1ZW1tYmz2o0CiTx-qnAR8C1KonxpM64An/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/19UpweuV6ToSaEojaXlXPRSqgVgXM6PQZ/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(6)">6. CIRCULAR QUEUE OPERATIONS</a>
+                        <ul id="opt6">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1p8lfTDcIKYNgVR9uNpSK2ahMiT6mx0K6/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/14aZ1EqBUaSpWMaS6tOhaR2U9nNS25J1u/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(7)">7. SINGLY LINKED LIST OPERATIONS</a>
+                        <ul id="opt7">
+                            <li><a
+                                    href="https://drive.google.com/file/d/13mpdakqY66tFMX5-63QYrJaGqQyABfXp/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1lXnqTTLn3dOARGPH6sZeBf02jJlu6rXB/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(8)">8. DOUBLY LINKED LIST OPERATIONS</a>
+                        <ul id="opt8">
+                            <li><a
+                                    href="https://drive.google.com/file/d/12lg8VogbNvIod2C4gInuZtR6lrW121Ra/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1lXnqTTLn3dOARGPH6sZeBf02jJlu6rXB/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(91)">9a. SINGLY CIRCULAR LINKED LIST</a>
+                        <ul id="opt9a">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1rvTxgALlCV_rbOTvMAnGFkkxhGjTNbVu/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1FHxowmcfYCZmeeK9emEcwog7-NFDvEFW/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(92)">9b. SUM OF TWO POLYNOMIAL</a>
+                        <ul id="opt9b">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1GFRmjaCy0TEBWORFajDtYfYHjU_1VheB/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/12TtQ1wqgVD3hllQUFB29rn5zjsYChZtJ/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(10)">10. BINARY SEARCH TREE</a>
+                        <ul id="opt10">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1YTYZxq2rn8Q6JdfcvSDfy59DRpD6EzJ9/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1_Osa_KQVt2A8Ta1gcM_6mw-fih17FpB2/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(11)">11. GRAPHS</a>
+                        <ul id="opt11">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1ckMU1JuzFArRJIwGfzLCsR1aRlo5GY_u/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1BQdRcZBIRK2NIfL7_x8wmJ-VCLkBa_fK/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="imp" onclick="spl1(12)">12. HASHING</a>
+                        <ul id="opt12">
+                            <li><a
+                                    href="https://drive.google.com/file/d/1hNp_0F0Gq2-tWyOznbgLga48rdFjXDjs/view?usp=sharing">Theory</a>
+                            </li>
+                            <li><a
+                                    href="https://drive.google.com/file/d/1UNigzLkZOBhlnkTnG6IFTYx6j4GtP0FY/view?usp=sharing">Execution</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+
+        </article>
+
+
+        <footer>
+            <div class="main-content">
+
+                <div class="left box">
+                    <div class="footer-logo">
+                        <img src="./Images/logo1.png">
+                    </div>
+                    <h2>Address</h2>
+                    <div class="content">
+                        <div class="place">
+                            <span class="fas fa-map-marker-alt"></span>
+                            <span class="text">Bengaluru, Karnataka</span>
+                        </div>
+                        <div class="phone">
+                            <span class="fas fa-phone-alt"></span>
+                            <span class="text">+91 7760484255</span>
+                        </div>
+                        <div class="email">
+                            <a href="mailto:swastikrajsingh7777@gmail.com"><span class="fas fa-envelope"></span></a>
+                            <span class="text">swastikrajsingh7777@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Connect with Us</h2>
+                    <div class="content">
+                        <div class="center">
+                            <div class="icons">
+                                <li class="fill-back"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                                <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                                            class="fab fa-twitter"></span></a></li>
+                                <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                                            class="fab fa-instagram"></span></a></li>
+                                <li class="fill-back"><a
+                                        href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                                            class="fab fa-linkedin-in"></span></a></li>
+                                <li class="fill-back git"><a href="https://github.com/Swastik1710"><span
+                                            class="fab fa-github"></span></a>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="additional">Additional Links</h2>
+                    <div class="content"></div>
+                    <div class="center-bottom-left">
+                        <div>
+                            <a href="about.html"><span class="fas fa-user"></span></a>
+                            <span class="text">About Us</span>
+                        </div>
+                        <div>
+                            <a href="feedback.html"><span class="fas fa-comments"></span></a>
+                            <span class="text">Feedback</span>
+                        </div>
+                    </div>
+                    <div class="center-bottom-right">
+                        <div>
+                            <a href="lab.html"><span class="fas fa-flask"></span></a>
+                            <span class="text">Laboratory</span>
+                        </div>
+                        <div>
+                            <a href="discussions.html"><span class="fas fa-users"></span></a>
+                            <span class="text">Discussions</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right box">
+                    <h2>Contact us</h2>
+                    <div class="content">
+                        <form action="https://formspree.io/f/mpzkqbjz" method="POST">
+                            <div class="email">
+                                <div class="text">Email *</div>
+                                <input type="email" placeholder="Enter your Email-id" name="_replyto" required>
+                            </div>
+                            <div class="msg">
+                                <div class="text">Message *</div>
+                                <textarea class="msg" rows="2" cols="25" placeholder="Enter your message!"
+                                    name="Message" required></textarea>
+                                <!-- <changeit rows="2" cols="25" required></changeit> -->
+                            </div>
+                            <div class="btn">
+                                <button type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <center>
+                    <span class="credit">Created By <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/">Swastik</a> | </span>
+                    <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+                </center>
+            </div>
+        </footer>
+
+    </div>
+
+    <script>
+
+        var loading = document.getElementById("load");
+        function func() {
+            loading.style.display = "none";
+        }
+
+        $('.icons li').click(function () {
+            $(this).toggleClass("shadow-2").siblings();
+            $(this).toggleClass("fill-color").siblings();
+            $(this).toggleClass("fill-back").siblings();
+        });
+
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
+
+        var sp1 = document.getElementById("opt1");
+        var sp2 = document.getElementById("opt2");
+        var sp3 = document.getElementById("opt3");
+        var sp4 = document.getElementById("opt4");
+        var sp5 = document.getElementById("opt5");
+        var sp6 = document.getElementById("opt6");
+        var sp7 = document.getElementById("opt7");
+        var sp8 = document.getElementById("opt8");
+        var sp91 = document.getElementById("opt9b");
+        var sp92 = document.getElementById("opt9b");
+        var sp10 = document.getElementById("opt10");
+        var sp11 = document.getElementById("opt11");
+        var sp12 = document.getElementById("opt12");
+
+        function spl1(val) {
+
+            switch (val) {
+                case 1:
+                    if (sp1.style.display === "none") {
+                        sp1.style.display = "block";
+                    }
+                    else {
+                        sp1.style.display = "none";
+                    }
+                    break;
+                case 2:
+                    if (sp2.style.display == "none") {
+                        sp2.style.display = "block";
+                    }
+                    else {
+                        sp2.style.display = "none";
+                    }
+                    break;
+                case 3:
+                    if (sp3.style.display == "none") {
+                        sp3.style.display = "block";
+                    }
+                    else {
+                        sp3.style.display = "none";
+                    }
+                    break;
+                case 4:
+                    if (sp4.style.display == "none") {
+                        sp4.style.display = "block";
+                    }
+                    else {
+                        sp4.style.display = "none";
+                    }
+                    break;
+                case 5:
+                    if (sp5.style.display == "none") {
+                        sp5.style.display = "block";
+                    }
+                    else {
+                        sp5.style.display = "none";
+                    }
+                    break;
+                case 6:
+                    if (sp6.style.display == "none") {
+                        sp6.style.display = "block";
+                    }
+                    else {
+                        sp6.style.display = "none";
+                    }
+                    break;
+                case 7:
+                    if (sp7.style.display == "none") {
+                        sp7.style.display = "block";
+                    }
+                    else {
+                        sp7.style.display = "none";
+                    }
+                    break;
+                case 8:
+                    if (sp8.style.display == "none") {
+                        sp8.style.display = "block";
+                    }
+                    else {
+                        sp8.style.display = "none";
+                    }
+                    break;
+                case 91:
+                    if (sp9a.style.display == "none") {
+                        sp9a.style.display = "block";
+                    }
+                    else {
+                        sp9a.style.display = "none";
+                    }
+                    break;
+                case 92:
+                    if (sp9b.style.display == "none") {
+                        sp9b.style.display = "block";
+                    }
+                    else {
+                        sp9b.style.display = "none";
+                    }
+                    break;
+                case 10:
+                    if (sp10.style.display == "none") {
+                        sp10.style.display = "block";
+                    }
+                    else {
+                        sp10.style.display = "none";
+                    }
+                    break;
+                case 11:
+                    if (sp11.style.display == "none") {
+                        sp11.style.display = "block";
+                    }
+                    else {
+                        sp11.style.display = "none";
+                    }
+                    break;
+                case 12:
+                    if (sp12.style.display == "none") {
+                        sp12.style.display = "block";
+                    }
+                    else {
+                        sp12.style.display = "none";
+                    }
+                    break;
+            }
+        }
+        mybutton = document.getElementById("myBtn");
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+</body>
+
+</html>

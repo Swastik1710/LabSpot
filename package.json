@@ -6,7 +6,8 @@
   "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,8 @@
   },
   "homepage": "https://github.com/Swastik1710/Lab-Website#readme",
   "devDependencies": {
-    "lite-server": "^2.5.4"
+    "lite": "^4.0.5",
+    "lite-server": "^2.5.4",
+    "server": "^1.0.30"
   }
 }

@@ -1,441 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
+  <meta charset="UTF-8" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
-<body onload="func()">   
-    
-    <div id="loader-bg">
-        
-<!--      <h1 class="click">Click Anywhere</h1>-->
-        
-                    <div class="loader">
-    
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
 
-                    </div>
-                
-    </div>     
-    
-    
-    <div class="container">
-        
-    <header class="header">
-        
-    <a class="link-title" href="">Minimalistic Website</a>    
-    
-    </header>
-        
-    <nav class="menu">
-        
-<!--                   <div class="burger"><i class="fa-fa-bars fa-2x"></i></div>-->
+<body id="mains" onload="func()">
 
-        
-       <ul class="menu-list" id="menu-open">        
-                   
-           <li><a class="current" href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        
-           <li><a href="about.html"><i class="fa fa-users"></i>About us</a>
-           
-                <ul class="sub">
-           
-                <li><a href="#"><i class="fa fa-home"></i>Mission</a></li>
-               
-                <li><a href="#"><i class="fa fa-home"></i>Vision</a></li>
-               
-                <li><a href="#"><i class="fa fa-home"></i>Our Team</a></li>
-           
-                </ul>               
-           </li>
-                       
-           <li><a href="lab.html"><i class="fa fa-flask"></i> Laboratory</a>
-           
-<!--
-               <ul class="sub" id="sub1">
-                <li><a href="#"><i class="fa fa-android"></i>App Development</a></li>
-                <li><a href="#"><i class="fa fa-desktop"></i>Website Development</a></li>
-                <li class="s-three"><a href="#">Machine Learning and Artificial Intelligence</a></li>        
-               </ul>
--->
-        
-           </li>
-        
-            <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
-
-            <li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
-
-            <li class="special1"><a href="form.html"><i class="fa fa-user"></i>  Login</a></li>
-           
-            <li class="backslash"><a href="">/</a></li>   
-           
-            <li class="special2"><a href="form2.html">Sign Up</a></li>
-           
-        </ul>
-        
-            
-        <a href="#" class="burger" onclick="slide()"><i class="fa fa-bars"></i></a>
-            
-    
-                
-        </nav>
-        
-<!--
-        <aside class="SideBar" >
-        
-        <h1>Side Bar</h1>
-        
-        <h3>Connect with Us:</h3>
-            
-            <ul>
-        
-      <li>
-            <a href="https://facebook.com"><i class="fa fa-facebook-official"></i>  Facebook</a>
-            
-          </li>
-            
-
-    <li>
-        <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram"></i>
-            
-            Instagram</a>
-     
-        </li>
-            
-            <li>
-                <a href="https://www.twitter.com"><i class="fa fa-twitter"></i>  Twitter</a>
-             </li>
-            <li>
-            <a href="https://www.youtube.com/c/DynamoGaming"><i class="fa fa-youtube-play"></i>  Youtube</a>   
-            </li>
-            
-            <li>
-                <a href="https://www.pinterest.com"><i class="fa fa-pinterest"></i>  Pinterest</a></li>
-        
-        </ul>            
-            
-            
-        <h2><a href="form.html">Login</a></h2>    
-            
-        <hr>
-            
-        <h2><a href="form2.html">Sign Up</a></h2>    
-            
-        <hr>    
-            
-            
-            
-            
-            
-        
-        </aside>
-        
--->
-<!--
-        <nav class="nav-btn">
-        
-            <div class="nav-bar">
-            
-            <h4>The Nav</h4>
-                
-            </div>
-            
-            <ul class="nav-links">    
-                <li class="current"><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-        
-                <li><a href="about.html"><i class="fa fa-users"></i>About us</a></li>
-
-                <li><a href="services.html"><i class="fa fa-tasks"></i> Services</a></li>
-        
-                <li><a href="contact.html"><i class="fa fa-phone"></i>Contact</a></li>
-           
-                <li><a href="gallery.html"><i class="fa fa-picture-o"></i>Gallery</a></li>
-           
-                <li><a href="form.html">Login</a></li>   
-            
-                <li><a href="form2.html">Sign Up</a></li>
-           
-            </ul>    
-            
-            <div class="burger">
-            
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-                        
-            </div>
-            
-        
-        </nav>
--->
-        
-        <article class="main">
-        
-<!--        <img src="http://placehold.it/300*300">-->
-            
-<!--
-        <div id="home-image">
-            
-            <a href="Images/img1.jfif"><img src="Images/img1.jfif"></a>                    
-            
-        </div>
--->
-            
-    <div class="box">        
-            
-     <div><button onclick="prev()" class="prev"><i class="fa fa-caret-left"></i></button></div>
-    
-    <img id="slider" src="https://www.doditsolutions.com/wp-content/uploads/doditdolutions-Android-ios-app-development-banner.png"/>
-    
-    <div><button onclick="next()" class="next"><i class="fa fa-caret-right"></i></button></div>
-        
+  <section id="load">
+    <div class="loading">
+      <div class="blocks" style="--i:1;"></div>
+      <div class="blocks" style="--i:2;"></div>
+      <div class="blocks" style="--i:3;"></div>
+      <div class="blocks" style="--i:4;"></div>
+      <div class="blocks" style="--i:5;"></div>
+      <div class="blocks" style="--i:6;"></div>
+      <div class="blocks" style="--i:7;"></div>
+      <div class="blocks" style="--i:8;"></div>
+      <div class="blocks" style="--i:9;"></div>
+      <div class="blocks" style="--i:10;"></div>
+      <div class="blocks" style="--i:11;"></div>
+      <div class="blocks" style="--i:12;"></div>
+      <div class="blocks" style="--i:13;"></div>
+      <div class="blocks" style="--i:14;"></div>
+      <div class="blocks" style="--i:15;"></div>
+      <div class="blocks" style="--i:16;"></div>
+      <div class="blocks" style="--i:17;"></div>
+      <div class="blocks" style="--i:18;"></div>
+      <div class="blocks" style="--i:19;"></div>
+      <div class="blocks" style="--i:20;"></div>
+      <h3>Loading...</h3>
     </div>
-    
-            
-        <div class="text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae est sit amet tortor fringilla suscipit id sit amet sapien. Quisque eget neque ac nisl maximus finibus. Vivamus ut nulla felis. Praesent odio dolor, pretium nec orci id, pharetra ullamcorper arcu. Fusce at leo at nibh vehicula aliquam non ac tortor. Ut ex nisi, volutpat sed dui sit amet, ornare rhoncus nibh. Vestibulum euismod laoreet rhoncus. Vestibulum vel lectus convallis leo tempus commodo in at neque. Aliquam porttitor ex in neque gravida convallis. Duis vitae venenatis metus.</p>
-        
-        </div>
-            
-        </article>
-        
-        <footer class="footer-style">
-        
-            <div class="footer-text">
-                
-                    <div class="col">
-                        
-                        <div class="footer-heading">
-                        
-                            <h2>Our Location</h2>
-                            
-                        </div>    
-                            
-                            <p>New Housing Colony</p>
-                            <p>S-type,S-35/10</p>
-                            <p>Adityapur,Jamshedpur</p>
-                            <p>T: +91 8409737777</p>
-                            <p>E: <a href="mailto:swastikrajsingh7777@gmail.com">swastikrajsingh7777@gmail.com</a></p>
-                            <a href="https://maps.app.goo.gl/DruZeJvxkfqF6pcD7" class="google-map" target="_blank"><i class="fa fa-map-marker"></i>     Google Maps</a>
-                        
-                    
-                    </div>
-                    
-                
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2 class="special-footer">Connect with Us</h2></div>
-                        
-                        <ul class="social">
-        
-                            <li><a href="https://facebook.com">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-facebook-official"></i>
-                                
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.instagram.com/?hl=en">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-instagram"></i>
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.twitter.com">
-                                
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-            
-                            <li><a href="https://www.youtube.com/c/DynamoGaming">
-                                
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <i class="fa fa-youtube-play"></i>
-                                
-                                </a>
-                            </li>
-            
-                        </ul>            
-                    
-                    </div>
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Services</h2></div>
-                        
-                        <ul class="services">
-                            
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Web App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Android App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>IOS App</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i>Website</a></li>
-                        
-                        </ul>
-                        
-                    </div>
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Additional Links</h2></div>
-                        
-                        <ul class="footer-menu">        
-                
-                            <li><a href="about.html"><i class="fa fa-users"></i> About us</a></li>
-        
-                            <li><a href="contact.html"><i class="fa fa-phone"></i> Contact</a></li>
-           
-                            <li><a href="gallery.html"><i class="fa fa-picture-o"></i> Gallery</a></li>
-           
-                        </ul>
-    
-                    </div>
-                    
-                    
-                    <div class="col">
-                    
-                        <div class="footer-heading"><h2>Sign Up for our Newsletter</h2></div>
-                    
-                        <p>Receive updates and news about our achievements,events and seminars.</p>
-                        
-                        <form class="newsletter">
-                        
-                            <input type="text" class="input-field-footer" placeholder="Email Id" required>
-                        
-                            <button type="submit" class="submit-btn-footer">Sign Up</button>
-                        
-                        </form>
-                        
-                    </div>
-                </div>
-            
-            
-                        
-                        
-                <div class="bottom">
-                        
-                        <div class="cprt">                    
-                            <p> &copy; 2030 Minimalistic Website , Design by <a href="http://www.wikipedia.org">Swastik</a></p>
-                        </div>
-                </div>   
-            
-                      
-        </footer>
-        
-    </div> 
-    
-     <script>
-         
-        var loading = document.getElementById('loader-bg');
-//    let timeout ;
-//         
-//    function delayTimer() {
-//        timeout = setTimeout(func,5000);
-//    }
-         
-        function func(){
-        loading.style.display = 'none';
-        }
-         
-//        var user=prompt("Please enter your name");
-//        alert(user);
-//        
-        function end() {
-        var result= confirm("Do you really want to leave this page");
-        if(result==true)
-            alert("Thanks for visiting");
-        else
-            alert("Thanks for staying with us");
-        }
-         
-        document.addEventListener("onunload",end);
-         
-         var images = ['https://www.doditsolutions.com/wp-content/uploads/doditdolutions-Android-ios-app-development-banner.png','https://previews.123rf.com/images/azaman357/azaman3571603/azaman357160300007/53371175-flat-designed-banner-for-web-development-with-long-shadows-.jpg','https://ipgeniussolutions.com/wp-content/uploads/2019/05/networking-solutions.jpg','https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQwtzOI6PLZ0N3RJgWawCK6A-kAv0YlfcF31g&usqp=CAU'];
-    var num=0;
-         
-    function next() {
-        var slider=document.getElementById("slider");
-        num++;
-        if(num>=images.length)
-            num=0;
-        slider.src=images[num];
-    }
-         
-    function prev() {
-        var slider=document.getElementById("slider");
-        num--;
-        if(num<0)
-            num=images.length-1;
-        slider.src=images[num];
-    }
-        
-        var t = setInterval(move,5000);
-         
-        var n=0; 
-        
-        function move() {
-            var pic=document.getElementById("slider");
-            n++;
-            if(n>=images.length)
-                n=0;
-            pic.src=images[n];
+  </section>
 
-        }   
-         
-        function slide(){
-            var x = document.getElementById('menu-open');
-            if (x.style.display == "none"){
-                x.style.display="block";
-            }
-            else{
-                x.style.display="none";
-            }
-        }
-        
-        $(function() {
-         
-        $('.menu-list li').hover(function() {$('ul.sub',this).slideDown(500);},function() {$('ul.sub',this).slideUp(300);});
-//        $('#menu').on("click",slide(){
-//            $(".menu ul").toggleClass("showing");
-//        });
-        
-        });
-         
-    </script>
-    
+  <button onclick="topFunction()" id="myBtn"><i class="fas fa-arrow-up"></i></button>
+
+  <div class="container">
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo"><a href="index.html"><img src="./Images/logo1.png"><span>LabSpot</span></a></div>
+          <ul class="links">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lab.html">Laboratory</a></li>
+            <!-- <li><a href="discussions.html">Discussions</a></li> -->
+            <li><a href="feedback.html">Feedback</a></li>
+            <!-- <li><a href="form1.html" class="login">Login</a></li> -->
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <div class="main">
+
+      <div class="content1">
+        <div class="images">
+          <img class="img" src="Images/bg1.jpg">
+          <img class="img" src="Images/bg2.jpg">
+          <img class="img" src="Images/bg3.jpg">
+          <img class="img" src="Images/bg4.jpg">
+          <img class="img" src="Images/bg5.jpg">
+        </div>
+        <div class="btm-slides">
+          <span onclick="btm_slide(1)"></span>
+          <span onclick="btm_slide(2)"></span>
+          <span onclick="btm_slide(3)"></span>
+          <span onclick="btm_slide(4)"></span>
+          <span onclick="btm_slide(5)"></span>
+        </div>
+        <div class="sliders left" onclick="side_slide(-1)">
+          <span class="fas fa-angle-left"></span>
+        </div>
+        <div class="sliders right" onclick="side_slide(1)">
+          <span class="fas fa-angle-right"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-text">
+
+      <span>LabSpot</span>
+      <h2>One-stop solution to lab experiments of all semesters and branches.</h2>
+      <p>
+        This is a portal for all lab experiments included in the VTU syllabus, including lab manuals and explanation
+        videos for all the experiments. Preparing for the Lab exams won't be a nightmare anymore.
+
+      </p>
+
+      <p>
+      </p>
+
+      <p>
+        To get started, head over to the Laboratory page by clicking the button below<br><span class="arrow"><i
+            class="fas fa-arrow-down"></i></span>
+      </p>
+
+      <div class="btn1">
+        <button onclick="document.location='lab.html'" class="button">Laboratory</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="main-content">
+
+        <div class="left box">
+          <div class="footer-logo">
+            <img src="./Images/logo1.png">
+          </div>
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Bengaluru, Karnataka</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+91 7760484255</span>
+            </div>
+            <div class="email">
+              <a href="mailto:swastikrajsingh7777@gmail.com"><span class="fas fa-envelope"></span></a>
+              <span class="text">swastikrajsingh7777@gmail.com</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="center box">
+          <h2>Connect with Us</h2>
+          <div class="content">
+            <div class="center">
+              <div class="icons">
+                <li class="fill-back"><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+                <li class="fill-back"><a href="https://twitter.com/SwastikRajSing1"><span
+                      class="fab fa-twitter"></span></a></li>
+                <li class="fill-back"><a href="https://www.instagram.com/swastik_17.10/"><span
+                      class="fab fa-instagram"></span></a></li>
+                <li class="fill-back"><a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/"><span
+                      class="fab fa-linkedin-in"></span></a></li>
+                <li class="fill-back git"><a href="https://github.com/Swastik1710"><span
+                      class="fab fa-github"></span></a>
+                </li>
+              </div>
+            </div>
+          </div>
+          <h2 class="additional">Additional Links</h2>
+          <div class="content"></div>
+          <div class="center-bottom-left">
+            <div>
+              <a href="about.html"><span class="fas fa-user"></span></a>
+              <span class="text">About Us</span>
+            </div>
+            <div>
+              <a href="feedback.html"><span class="fas fa-comments"></span></a>
+              <span class="text">Feedback</span>
+            </div>
+          </div>
+          <div class="center-bottom-right">
+            <div>
+              <a href="lab.html"><span class="fas fa-flask"></span></a>
+              <span class="text">Laboratory</span>
+            </div>
+            <div>
+              <a href="discussions.html"><span class="fas fa-users"></span></a>
+              <span class="text">Discussions</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="right box">
+          <h2>Contact us</h2>
+          <div class="content">
+            <form action="https://formspree.io/f/mpzkqbjz" method="POST">
+              <div class="email">
+                <div class="text">Email *</div>
+                <input type="email" placeholder="Enter your Email-id" name="_replyto" required>
+              </div>
+              <div class="msg">
+                <div class="text">Message *</div>
+                <textarea class="msg" rows="2" cols="25" placeholder="Enter your message!" name="Message"
+                  required></textarea>
+                <!-- <changeit rows="2" cols="25" required></changeit> -->
+              </div>
+              <div class="btn">
+                <button type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="credit">Created By <a href="https://www.linkedin.com/in/swastik-raj-singh-80ba881b8/~">Swastik</a> | </span>
+          <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+        </center>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    var loading = document.getElementById("load");
+    function func() {
+      loading.style.display = "none";
+    }
+
+    $('.icons li').click(function () {
+      $(this).toggleClass("shadow-2").siblings();
+      $(this).toggleClass("fill-color").siblings();
+      $(this).toggleClass("fill-back").siblings();
+    });
+
+    var indexValue = 1;
+    showImg(indexValue);
+    function btm_slide(e) { showImg(indexValue = e); }
+    function side_slide(e) { showImg(indexValue += e); }
+    function showImg(e) {
+      var i;
+      const img = document.querySelectorAll('.img');
+      const slider = document.querySelectorAll('.btm-slides span');
+      if (e > img.length) { indexValue = 1 }
+      if (e < 1) { indexValue = img.length }
+      for (i = 0; i < img.length; i++) {
+        img[i].style.display = "none";
+      }
+      for (i = 0; i < slider.length; i++) {
+        slider[i].style.background = "rgba(255,255,255,0.1)";
+      }
+      img[indexValue - 1].style.display = "block";
+      slider[indexValue - 1].style.background = "white";
+    }
+
+    window.onbeforeunload = () => {
+      for (const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
+
+    mybutton = document.getElementById("myBtn");
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 </body>
+
 </html>
