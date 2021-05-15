@@ -168,22 +168,25 @@ nav .content .links {
   #form2 section {
     margin-top: 145px;
   }
-  #contact section {
-    margin-top: 145px;
-  }
-  #mains .content1 {
-    margin-top: 135px;
-    margin-bottom: 50px;
-  }
   #about-page .container .main .description h1 {
     font-size: 40px;
   }
-  .main .exp ul li .imp {
+  .main .exp ol li .imp {
     font-size: 20px;
   }
   #sub .base .banner img {
     width: 400px;
     height: 220px;
+  }
+  #lab .base .banner img {
+    width: 400px;
+    height: 220px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -10px;
+  }
+  #contact .container section {
+    min-height: 85vh;
   }
 }
 
@@ -208,21 +211,26 @@ nav .content .links {
   #about-page .container .main .description h1 {
     font-size: 28px;
   }
-  .main .exp ul li .imp {
+  .main .exp ol li .imp {
     font-size: 15px;
+    padding: 0;
   }
   #sub .base .banner img {
     width: 300px;
     height: 200px;
   }
-}
-
-@media screen and (max-width: 360px) {
-  .main .exp ul {
-    margin: 5px 15px;
+  #lab .base .banner img {
+    width: 300px;
+    height: 200px;
   }
-  .main .exp ul li .imp {
-    padding: -1;
+  .main .exp ol {
+    margin: 5px 30px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -20px;
+  }
+  #contact .container section {
+    min-height: 75vh;
   }
 }
 
@@ -232,6 +240,9 @@ nav .content .links {
   }
   #about-page .container .main .description h1 {
     font-size: 20px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -30px;
   }
 }
 
@@ -906,6 +917,23 @@ h2 {
 }
 
 /*Contact Page*/
+#contact .container {
+  background: url(../Images/abt-bg.png);
+}
+
+.feedback-text {
+  padding: 10px;
+}
+
+.feedback-text h2 {
+  color: green;
+  font-size: 24px;
+  text-align: center;
+  font-family: monospace;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
 
 #contact section {
   display: flex;
@@ -1592,25 +1620,38 @@ h3 {
   text-decoration-style: double;
 }
 
-.exp ul {
-  margin: 60px auto;
+.main .exp ol {
+  margin: 70px auto;
   width: 70%;
+  list-style: none;
 }
 
-.exp ul li {
+.exp ol li {
   background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%);
   filter: hue-rotate(120deg);
   animation: animate 10s linear infinite;
   padding: 5px;
-  list-style:upper-roman;
-  list-style-position: inside;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin-bottom: 2px;
   border: 2px solid black;
+  counter-increment: list;
+  position: relative;
+  text-align: center;
 }
 
-.exp ul li .imp {
+.main .exp ol li::before {
+  
+  color: crimson;
+  font-size: 20px;
+  content: counter(list) ".";
+  left:-30px;
+  position: absolute;
+  text-align: left;
+  /* width: 36px; */
+}
+
+.exp ol li .imp {
   font-size: 22px;
   text-decoration: none;
   color: white;
@@ -1620,25 +1661,34 @@ h3 {
   cursor: pointer;
 }
 
-.exp ul li:hover .imp {
+.exp ol li:hover .imp {
   color: black;
 }
 
-.exp ul li ul {
+.exp ol li ul {
   display: none;
   margin: 5px;
   padding: 3px;
+  list-style: none;
+  list-style-type: none;
 }
 
-.exp ul li ul li {
+.exp ol li ul li {
   border-radius: 25px;
   display: inline-block;
   margin: 0px 10px;
   background: white;
   transition: 0.5s;
+  list-style-type: none;
+  list-style: none;
+  counter-increment: none;
 }
 
-.exp ul li ul li a {
+.main .exp ol li ul li::before {
+  content: "";
+}
+
+.exp ol li ul li a {
   color: black;
   font-size: 18px;
   letter-spacing: 1px;
@@ -1648,17 +1698,17 @@ h3 {
   transition: 0.5s;
 }
 
-.exp ul li ul li:hover {
+.exp ol li ul li:hover {
   background: black;
 }
 
-.exp ul li ul li:hover a {
+.exp ol li ul li:hover a {
   color: white;
 }
 
 /* DS STYLES */
 
-#ds .exp ul {
+#ds .exp ol {
   width: 50%;
 }
 
@@ -1728,15 +1778,17 @@ h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 90vh;
+  min-height: 60vh;
 }
 
-.main-text {
+.main-text, .main-text2 {
   display: block;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .main-text h2 {
@@ -1746,7 +1798,7 @@ h3 {
   letter-spacing: 2px;
 }
 
-.main-text span {
+.main-text span ,.main-text2 span {
   text-decoration: underline;
   text-decoration-style: double;
   color: green;
@@ -1754,7 +1806,7 @@ h3 {
   letter-spacing: 3px;
 }
 
-.main-text p {
+.main-text p, .main-text2 p {
   font-size: 28px;
   font-weight: lighter;
   font-family: sans-serif;
