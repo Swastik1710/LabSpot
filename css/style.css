@@ -124,7 +124,7 @@ nav .content .links {
     display: block;
     position: fixed;
     background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%);
-    height: 64%;
+    height: 250%;
     width: 30%;
     top: 70px;
     left: -100%;
@@ -134,6 +134,9 @@ nav .content .links {
     overflow-y: auto;
     padding-bottom: 100px;
     transition: all 0.3s ease;
+  }
+  #contact nav .content .links {
+    height: 70%;
   }
   .content .logo a span {
     font-size: 32px;
@@ -1472,7 +1475,7 @@ h3 {
 
 #lab .main .lab-head {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #lab .main .lab-head h1 {
@@ -1489,7 +1492,7 @@ h3 {
 
 #lab .base {
   display: flex;
-  margin-top: 100px;
+  margin-top: 50px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -1509,7 +1512,7 @@ h3 {
 
 #brn .main .lab-head {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #brn .main .lab-head h1 {
@@ -1543,54 +1546,13 @@ h3 {
   border-radius: 50px;
 }
 
-/****FIRST YEAR STYLES****/
-
-#sub .main .lab-head {
-  margin-top: 50px;
-}
-
-#sub .main .lab-head h1 {
-  font-family: "Algerian";
-  text-decoration: underline;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 32px;
-}
-
-#sub .main .lab-head h2 {
-  color: black;
-  text-align: center;
-  font-size: 32px;
-}
-
-#sub .base {
-  display: flex;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#sub .banner {
-  padding: 10px;
-  margin: 25px 100px;
-}
-
-#sub .banner img {
-  width: 500px;
-  height: 250px;
-  border-radius: 30px;
-}
-
-#sub #banner2 {
-  margin-bottom: 0px;
-}
-
 /*ALL PAGES BACKGROUND STYLES*/
 
 #phy .container chem .container,
 #cps .container,
 #ds .container,
 #ade .container,
+#bee .container,
 #discussions .container {
   background: url(../Images/abt-bg.png);
 }
