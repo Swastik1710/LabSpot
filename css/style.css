@@ -35,7 +35,7 @@ nav .content {
   align-items: center;
 }
 nav .content .links {
-  margin-left: 80px;
+  margin-left: 70px;
   display: flex;
 }
 .content .logo a img {
@@ -99,6 +99,9 @@ nav .content .links {
   display: none;
 }
 
+
+
+
 /* Responsive code start */
 @media screen and (max-width: 1250px) {
   .wrapper nav {
@@ -113,7 +116,7 @@ nav .content .links {
   }
 }
 
-@media screen and (max-width: 828px) {
+@media screen and (max-width: 832px) {
   .wrapper .menu-icon {
     display: block;
   }
@@ -663,7 +666,7 @@ h2 {
   line-height: 40px;
 }
 
-::selection {
+/* ::selection {
   color: #fff;
   background: #007bff;
 }
@@ -675,7 +678,7 @@ h2 {
   min-height: 100vh;
 }
 .wrapper1 {
-  max-width: 1100px;
+  max-width: 1200px;
 }
 .gallery {
   display: flex;
@@ -794,7 +797,7 @@ h2 {
     width: 100%;
     padding: 4px;
   }
-}
+} */
 
 /* CARDS STYLES */
 
@@ -1590,7 +1593,8 @@ h3 {
 #ds .container,
 #ade .container,
 #bee .container,
-#discussions .container {
+#discussions .container,
+#search .container {
   background: url(../Images/abt-bg.png);
 }
 
@@ -1642,7 +1646,7 @@ h3 {
 
 .main .exp ol li::before {
   
-  color: crimson;
+  /* color: crimson; */
   font-size: 20px;
   content: counter(list) ".";
   left:-30px;
@@ -1677,7 +1681,8 @@ h3 {
   border-radius: 25px;
   display: inline-block;
   margin: 0px 10px;
-  background: white;
+  background: cyan;
+  border: 2px solid cyan;
   transition: 0.5s;
   list-style-type: none;
   list-style: none;
@@ -1689,7 +1694,7 @@ h3 {
 }
 
 .exp ol li ul li a {
-  color: black;
+  color: #2c3e50;
   font-size: 18px;
   letter-spacing: 1px;
   font-family: monospace;
@@ -1699,7 +1704,7 @@ h3 {
 }
 
 .exp ol li ul li:hover {
-  background: black;
+  background: none;
 }
 
 .exp ol li ul li:hover a {
@@ -1926,7 +1931,7 @@ h3 {
  
 .wrapper1{
   max-width: 400px;
-  margin: 150px auto;
+  margin: 100px auto;
 }
  
 .wrapper1 .search-input{
@@ -1963,8 +1968,8 @@ h3 {
   border: 3px solid crimson;
   line-height: 50px;
   border-radius: 10px;
-  margin-left: -40px;
-  width: 100%;
+  margin-top: 20px;
+  width: 90%;
   text-align: center;
 }
 
@@ -1987,7 +1992,7 @@ h3 {
 }
 
 .activated {
-  display: block;
+  display: inline;
 }
  
 /* .search-input .autocom-box{
