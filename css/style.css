@@ -563,6 +563,7 @@ footer {
   text-decoration: none;
 }
 .bottom center a:hover {
+  color: green;
   text-decoration: underline;
 }
 @media screen and (max-width: 900px) {
