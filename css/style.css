@@ -138,7 +138,7 @@ nav .content .links {
     padding-bottom: 85px;
     transition: all 0.3s ease;
   }
-  nav .content .small {
+  nav .content .small1,nav .content .small2 {
     overflow-y: auto;
   }
   #contact nav .content .links {
@@ -276,12 +276,12 @@ nav .content .links {
     height: 207%;
   }
   #contact .container section {
-    margin-top: 16px;
+    margin-top: 15px;
   }
   #about-page .container .main .description h1 {
     font-size: 30px;
   }
-  nav .content .small {
+  nav .content .small1 {
     overflow-y: hidden;
   }
 }
@@ -302,7 +302,7 @@ nav .content .links {
   #contact .container section {
     margin-top: 5px;
   }
-  nav .content .small {
+  nav .content .small1 {
     overflow-y: hidden;
   }
 }
