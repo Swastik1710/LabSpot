@@ -281,6 +281,9 @@ nav .content .links {
   #about-page .container .main .description h1 {
     font-size: 30px;
   }
+  nav .content .small {
+    overflow-y: hidden;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -298,6 +301,9 @@ nav .content .links {
   }
   #contact .container section {
     margin-top: 5px;
+  }
+  nav .content .small {
+    overflow-y: hidden;
   }
 }
 
