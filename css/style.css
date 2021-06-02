@@ -181,7 +181,10 @@ nav .content .links {
     margin-top: 145px;
   }
   #about-page .container .main .description h1 {
-    font-size: 50px;
+    font-size: 35px;
+  }
+  #about-page .container .main .story h1 {
+    font-size: 35px;
   }
   .main .exp ol li .imp {
     font-size: 20px;
@@ -223,7 +226,10 @@ nav .content .links {
     width: 60px;
   }
   #about-page .container .main .description h1 {
-    font-size: 40px;
+    font-size: 30px;
+  }
+  #about-page .container .main .story h1 {
+    font-size: 30px;
   }
   .main .exp ol li .imp {
     font-size: 15px;
@@ -260,9 +266,6 @@ nav .content .links {
   nav .content .links {
     width: 50%
   }
-  #about-page .container .main .description h1 {
-    font-size: 35px;
-  }
   #contact nav .content .links {
     height: 145%;
   }
@@ -278,9 +281,6 @@ nav .content .links {
   #contact .container section {
     margin-top: 15px;
   }
-  #about-page .container .main .description h1 {
-    font-size: 30px;
-  }
   nav .content .small1 {
     overflow-y: hidden;
   }
@@ -291,6 +291,9 @@ nav .content .links {
     width: 100%;
   }
   #about-page .container .main .description h1 {
+    font-size: 20px;
+  }
+  #about-page .container .main .story h1 {
     font-size: 20px;
   }
   #mains .container .main-text {
@@ -644,11 +647,8 @@ h2 {
 }
 
 #about-page .main .description {
-  margin-left: auto;
-  margin-right: auto;
   width: 70%;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  margin: 40px auto;
 }
 
 #about-page .main .description h2 {
@@ -671,12 +671,11 @@ h2 {
 }
 
 #about-page .main .description h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-family: "memphis_lt_stdlight";
   text-decoration: underline;
   text-decoration-style: double;
   text-align: center;
-  /* letter-spacing: 3px; */
   margin-bottom: 30px;
 }
 
@@ -685,16 +684,16 @@ h2 {
   margin-right: auto;
   width: 70%;
   margin-top: 60px;
-  /* margin-bottom: 0px; */
 }
 
 #about-page .main .story h1 {
   color: black;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
   font-family: "memphis_lt_stdlight";
   text-decoration: underline;
   text-decoration-style: double;
+  margin-top: 50px;
 }
 #about-page .main .story h2 {
   color: black;
@@ -704,11 +703,6 @@ h2 {
   letter-spacing: 3px;
   line-height: 40px;
 }
-
-#about-page .main .story h1 {
-  margin-top: 60px;
-}
-
 
 /* .imgbox {
   padding: 10px;
