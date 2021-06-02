@@ -578,6 +578,7 @@ footer {
     height: 45px;
     width: 45px;
     margin: 0 5px;
+    margin-top: 5px;
   }
   .center .icons li a {
     line-height: 45px;
