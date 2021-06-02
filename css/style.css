@@ -127,7 +127,7 @@ nav .content .links {
     display: block;
     position: fixed;
     background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%);
-    height: 356%;
+    height: 280%;
     width: 30%;
     top: 70px;
     left: -100%;
@@ -137,19 +137,15 @@ nav .content .links {
     overflow-y: hidden;
     padding-bottom: 85px;
     transition: all 0.3s ease;
-    z-index: 3;
   }
   nav .content .small {
     overflow-y: auto;
   }
-  nav .content ul li:nth-child(4) {
-    margin-bottom: 1px;
-  }
   #contact nav .content .links {
-    height: 75%;
+    height: 50%;
   }
   #search nav .content .links {
-    height: 75%;
+    height: 50%;
   }
   .content .logo a span {
     font-size: 32px;
@@ -165,7 +161,7 @@ nav .content .links {
     color: white;
   }
   .content .links li {
-    margin: 15px 20px;
+    margin: 5px 20px;
   }
   .content .links li a,
   .content .links li label {
@@ -1632,7 +1628,7 @@ h3 {
 
 .exp-head {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .exp-head h1 {
@@ -1646,7 +1642,7 @@ h3 {
   font-size: 28px;
   font-family: fantasy;
   letter-spacing: 3px;
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 70px;
   text-align: center;
   text-decoration: underline;
@@ -1654,7 +1650,7 @@ h3 {
 }
 
 .main .exp ol {
-  margin: 70px auto;
+  margin: 100px auto;
   width: 70%;
   list-style: none;
 }
