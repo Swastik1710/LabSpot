@@ -210,9 +210,6 @@ nav .content .links {
   nav .content .links {
     width: 40%;
   }
-  #contact nav .content .links {
-    height: 80%;
-  }
   .content .logo a span {
     font-size: 26px;
     padding-top: 18px;
@@ -261,11 +258,14 @@ nav .content .links {
   #about-page .container .main .description h1 {
     font-size: 35px;
   }
+  #contact nav .content .links {
+    height: 130%;
+  }
 }
 
 @media screen and (max-width: 364px) {
   #contact nav .content .links {
-    height: 187%;
+    height: 125%;
   }
   #about-page .container .main .description h1 {
     font-size: 30px;
@@ -283,7 +283,7 @@ nav .content .links {
     margin-bottom: -30px;
   }
   #contact nav .content .links {
-    height: 197%;
+    height: 202%;
   }
 }
 
