@@ -182,7 +182,7 @@ nav .content .links {
     margin-top: 145px;
   }
   #about-page .container .main .description h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
   .main .exp ol li .imp {
     font-size: 20px;
@@ -226,7 +226,7 @@ nav .content .links {
     width: 60px;
   }
   #about-page .container .main .description h1 {
-    font-size: 28px;
+    font-size: 40px;
   }
   .main .exp ol li .imp {
     font-size: 15px;
@@ -259,11 +259,17 @@ nav .content .links {
   nav .content .links {
     width: 50%
   }
+  #about-page .container .main .description h1 {
+    font-size: 35px;
+  }
 }
 
 @media screen and (max-width: 364px) {
   #contact nav .content .links {
     height: 187%;
+  }
+  #about-page .container .main .description h1 {
+    font-size: 30px;
   }
 }
 
@@ -653,15 +659,15 @@ h2 {
   margin-bottom: 30px;
 }
 
-#about-page .main .history {
+#about-page .main .story {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
   margin-top: 60px;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
 
-#about-page .main .history h1 {
+#about-page .main .story h1 {
   color: black;
   font-size: 50px;
   text-align: center;
@@ -669,13 +675,17 @@ h2 {
   text-decoration: underline;
   text-decoration-style: double;
 }
-#about-page .main .history h2 {
+#about-page .main .story h2 {
   color: black;
   font-size: 28px;
   font-weight: lighter;
   font-family: sans-serif;
   letter-spacing: 3px;
   line-height: 40px;
+}
+
+#about-page .main .story h1 {
+  margin-top: 60px;
 }
 
 
@@ -874,6 +884,11 @@ h2 {
   font-size: 18px;
 }
 
+.team .team_member q {
+  font-size: 16px;
+  color: grey;
+}
+
 .team .team_member .team_img {
   position: absolute;
   top: -50px;
@@ -896,7 +911,11 @@ h2 {
 .team_member .icons1 {
   display: flex;
   justify-content: center;
+  margin-top: 10px;
 }
+.team_member .imp {
+  margin-top: 30px;
+} 
 .team_member .icons1 li {
   position: relative;
   list-style: none;
