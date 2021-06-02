@@ -139,7 +139,7 @@ nav .content .links {
     transition: all 0.3s ease;
   }
   nav .content .small {
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   #contact nav .content .links {
     height: 80%;
