@@ -138,14 +138,17 @@ nav .content .links {
     padding-bottom: 85px;
     transition: all 0.3s ease;
   }
+  #search nav .content .links,#contact nav .content .links {
+    padding-bottom: 0px;
+  }
   nav .content .small1,nav .content .small2 {
     overflow-y: auto;
   }
   #contact nav .content .links {
-    height: 80%;
+    height: 186%;
   }
   #search nav .content .links {
-    height: 80%;
+    height: 186%;
   }
   .content .logo a span {
     font-size: 32px;
@@ -258,7 +261,7 @@ nav .content .links {
     margin-top: 25px;
   }
   #contact nav .content .links {
-    height: 144%;
+    height: 250%;
   }
 }
 
@@ -267,7 +270,7 @@ nav .content .links {
     width: 50%
   }
   #contact nav .content .links {
-    height: 145%;
+    height: 254%;
   }
   #contact .container section {
     margin-top: -4px;
@@ -276,7 +279,7 @@ nav .content .links {
 
 @media screen and (max-width: 364px) {
   #contact nav .content .links {
-    height: 207%;
+    height: 312%;
   }
   #contact .container section {
     margin-top: 15px;
@@ -286,7 +289,7 @@ nav .content .links {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 315px) {
   nav .content .links {
     width: 100%;
   }
@@ -300,10 +303,10 @@ nav .content .links {
     margin-bottom: -30px;
   }
   #contact nav .content .links {
-    height: 207%;
+    height: 312%;
   }
   #contact .container section {
-    margin-top: 5px;
+    margin-top: 15px;
   }
   nav .content .small1 {
     overflow-y: hidden;
