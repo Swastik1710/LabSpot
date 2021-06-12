@@ -388,34 +388,28 @@ footer {
     inset 3px 3px 5px rgba(33, 39, 44, 0.288);
 }
 .center .icons li:nth-child(1).fill-color a {
-  color: #4267b2;
-}
-.center .icons li:nth-child(2).fill-color a {
   color: #1da1f2;
 }
-.center .icons li:nth-child(3).fill-color a {
+.center .icons li:nth-child(2).fill-color a {
   color: #e1306c;
 }
-.center .icons li:nth-child(4).fill-color a {
+.center .icons li:nth-child(3).fill-color a {
   color: #2867b2;
 }
-.center .icons li:nth-child(5).fill-color a {
+.center .icons li:nth-child(4).fill-color a {
   color: #000;
 }
 
 .center .icons li:nth-child(1).fill-back:hover {
-  background-color: #4267b2;
-}
-.center .icons li:nth-child(2).fill-back:hover {
   background-color: #1da1f2;
 }
-.center .icons li:nth-child(3).fill-back:hover {
+.center .icons li:nth-child(2).fill-back:hover {
   background-color: #e1306c;
 }
-.center .icons li:nth-child(4).fill-back:hover {
+.center .icons li:nth-child(3).fill-back:hover {
   background-color: #2867b2;
 }
-.center .icons li:nth-child(5).fill-back:hover {
+.center .icons li:nth-child(4).fill-back:hover {
   background-color: grey;
 }
 
@@ -1722,7 +1716,7 @@ h3 {
 .exp ol li ul li {
   border-radius: 25px;
   display: inline-block;
-  margin: 0px 10px;
+  margin: 1px 10px;
   background: cyan;
   border: 2px solid cyan;
   transition: 0.5s;
