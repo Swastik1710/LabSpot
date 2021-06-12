@@ -1581,6 +1581,10 @@ h3 {
   margin: 20px;
 }
 
+#lab .square  img {
+  border-radius: 30px !important;
+}
+
 #lab .banner img {
   width: 500px;
   height: 250px;
