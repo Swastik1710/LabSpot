@@ -59,7 +59,7 @@ const assets = [
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
         caches.open(staticLabSpot).then(cache => {
-            return cache.addAll(assets)
+            cache.addAll(assets)
         })
     )
 })
