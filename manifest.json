@@ -1,0 +1,16 @@
+{
+    "name": "LabSpot",
+    "short_name": "LabSpot",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#fdfdfd",
+    "theme_color": "#db4938",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/Images/logo1.png",
+        "type": "image/png", "sizes": "72x72"
+      }
+    ]
+  }
+  
