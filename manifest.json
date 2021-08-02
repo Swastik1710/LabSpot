@@ -3,8 +3,8 @@
     "short_name": "LabSpot",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#db4938",
-    "theme_color": "#db4938",
+    "background_color": "linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%)",
+    "theme_color": "linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%)",
     "orientation": "portrait-primary",
     "icons": [
       {
