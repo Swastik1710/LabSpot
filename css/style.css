@@ -2085,7 +2085,7 @@ h3 {
 }
 
 
-.hidden {
+/* .hidden {
   display: none !important;
 }
 
@@ -2103,4 +2103,4 @@ h3 {
   color: white;
   font-size: 1em;
   padding: 0.75em;
-}
+} */
