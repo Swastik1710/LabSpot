@@ -2,6 +2,27 @@ const staticLabSpot = "labspot-site-v1"
 const assets = [
   "/",
   "/index.html",
+  "/about.html",
+  "/ade.html",
+  "/bee.html",
+  "/branch.html",
+  "/chem.html",
+  "/coming_soon.html",
+  "/cps.html",
+  "/cse.html",
+  "/daa.html",
+  "/discussions.html",
+  "/ds.html",
+  "/feedback.html",
+  "/first_subs_chem.html",
+  "/first_subs_phy.html",
+  "/first_subs.html",
+  "/form1.html",
+  "/form2.html",
+  "/lab.html",
+  "/mces.html",
+  "/phy.html",
+  "/search.html",
   "/css/style.css",
   "/js/scripts.js",
   "/Images/abt-bg.png",
@@ -38,7 +59,7 @@ const assets = [
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
     caches.open(staticLabSpot).then(cache => {
-      cache.addAll(assets)
+      return cache.addAll(assets)
     })
   )
 })
