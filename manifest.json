@@ -3,17 +3,13 @@
     "short_name": "LabSpot",
     "start_url": "index.html",
     "display": "standalone",
-    "background_color": "#fdfdfd",
+    "background": "linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%)",
     "theme_color": "#db4938",
     "orientation": "portrait-primary",
     "icons": [
       {
-        "src": "/Images/logo1.png",
+        "src": "/Images/icon-512x512.png",
         "type": "image/png", "sizes": "512x512"
-      },
-      {
-        "src": "/Images/logo1.png",
-        "type": "image/png", "sizes": "192x192"
       }
     ]
   }
