@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>You are offline</title>
+
+    <!-- Inline the page's stylesheet. -->
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: -10px;
+        }
+
+        p {
+            letter-spacing: 2px;
+            font-weight: bolder;
+            font-size: 20px;
+            margin-top: 20px;
+            color: black;
+        }
+
+        .bgimg {
+            background-image: url("./Images/offline.jpg");
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 25px;
+        }
+
+        button {
+            text-decoration: none;
+            background: #2c3e50;
+            border: 3px solid #2c3e50;
+            display: inline-block;
+            border-radius: 10px;
+            margin-left: 0px;
+            color: cyan;
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        button:hover {
+            background: none;
+            color: cyan;
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .middle img {
+            height: 200px;
+            margin-top: -20px;
+        }
+
+        hr {
+            margin: 20px auto;
+            width: 70%;
+            color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bgimg">
+        <div class="middle">
+            <img src="./Images/logo1.png">
+            <h1>You're Offline</h1>
+            <hr>
+            <p>
+                The page will automatically reload once the connection has been re-established.
+                Click the button below to try reloading manually.
+            </p>
+            <button type="button">⤾ Reload</button>
+        </div>
+    </div>
+
+    <!-- Inline the page's JavaScript file. -->
+    <script>
+      // Manual reload feature.
+      document.querySelector("button").addEventListener("click", () => {
+        window.location.reload();
+      });
+
+      // Listen to changes in the network state, reload when online.
+      // This handles the case when the device is completely offline.
+      window.addEventListener('online', () => {
+        window.location.reload();
+      });
+
+      // Check if the server is responding and reload the page if it is.
+      // This handles the case when the device is online, but the server
+      // is offline or misbehaving.
+      async function checkNetworkAndReload() {
+        try {
+          const response = await fetch('.');
+          // Verify we get a valid response from the server
+          if (response.status >= 200 && response.status < 500) {
+            window.location.reload();
+            return;
+          }
+        } catch {
+          // Unable to connect to the server, ignore.
+        }
+        window.setTimeout(checkNetworkAndReload, 2500);
+      }
+
+      checkNetworkAndReload();
+    </script>
+</body>
+
+</html>
