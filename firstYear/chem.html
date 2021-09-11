@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chemistry Laboratory</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $("#navbar").load("../components/navbar.html");
+        $("#footer").load("../components/footer.html");
+        $("#scroll").load("../components/scrolltoTop.html");
+        $("#loader").load("../components/loader.html");
+      });
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+
+  <body id="chem" onload="func()">
+    <div id="loader"></div>
+    <div id="scroll"></div>
+    <div class="container">
+      <div id="navbar"></div>
+      <article class="main">
+        <div class="exp-head">
+          <h1>Welcome to the Chemistry Laboratory</h1>
+        </div>
+        <div class="exp">
+          <h2>Here is the list of experiments</h2>
+          <ol>
+            <li>
+              <a class="imp" onclick="spl1(1)"
+                >Estimation of Total hardness of water by EDTA complexometric
+                method</a
+              >
+              <ul id="opt1">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1bl8c23r5LnJb4HUpdxMTQZSYy-CVMui5/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1e4NGsVkYBxYWOgF_kCx6TNvU-Xcinyep/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(2)"
+                >Estimation of CaO in cement solution by rapid EDTA method</a
+              >
+              <ul id="opt2">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1iSapY8Fav-B0kpG4aadkqnUVjIpXWW21/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1ibYIoBunro2EzoMy4ht942cs3W1sC9Ch/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(3)"
+                >Determination of percentage of Copper in brass using standard
+                sodium thiosulphate solution</a
+              >
+              <ul id="opt3">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1eYyXmTsf3r6N2vlHPZKeXxldUsIpfcqu/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1Yg4nDWyOSpZ17bqSjAh8L-SoTAEVqwOd/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(4)"
+                >Estimation of Iron in haematite ore solution using standard
+                K2Cr2O7 solution by External Indicator method</a
+              >
+              <ul id="opt4">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1N-yGOjDL12bo0XDogIRpNVQbcI4rZxUK/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1dJsuC0_ewgIKM-9lzF88vJyNbiM5iwtP/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(5)"
+                >Determination of COD of waste water</a
+              >
+              <ul id="opt5">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1_fCi7wCPwrEjzJ6EIhmJxZhq7zUTHIZY/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1W-CfxluoRZscq-BDGdvd997oquzMbCPt/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(6)"
+                >Estimation of percentage of available chlorine in given sample
+                of bleaching powder (Iodometric method)</a
+              >
+              <ul id="opt6">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1093iqkYbCdTgdYaKxRHMfONZHLJTHvAx/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/drive/u/3/folders/1DBx_y430X-0Vijy1TyW_NN4tjKQvhbBb"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(7)"
+                >Determination of pKa of weak acid using pH meter</a
+              >
+              <ul id="opt7">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1CHMBDNVupwOD0NAPsnNah_0Icvr7GKkH/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1gvzmbxek39vt99TIeHfm4STUKVCgp2PG/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(8)"
+                >Potentiometric estimation of FAS using standard K2Cr2O7
+                solution.</a
+              >
+              <ul id="opt8">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1lfUlkCAjj5ujGCaMY_sifRb-DdsAN0Uy/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1enP4q1igv85q2VSETQiTtOIRkXpZEzmJ/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(9)"
+                >Colorimetric estimation of copper</a
+              >
+              <ul id="opt9">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1KtRkZDEEybABuTqqUwmUYc5-Gkxv5dvP/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1JfLYuogeaRqKS_oLOBnsnQhwACqH-SnZ/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(10)"
+                >Estimation of Acids in acid mixture conductometrically</a
+              >
+              <ul id="opt10">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1TC_FaYU5jJ5fiZVQ46oJoJwhb9j1ipD5/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1HdTCJmBzFsRyrETyzFLo1zlyI6gfQqiq/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(11)"
+                >Determination of Viscosity co-efficient of the given liquid
+                using Ostwald’s viscometer</a
+              >
+              <ul id="opt11">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1arIKcnvd21c2GSEfmjs3X0a1V1W-9ZoJ/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/17nMAx2KtkaKGSqnLsbaUumAioxdKOMkS/view?usp=sharing"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="imp" onclick="spl1(12)"
+                >Flame Photometeric estimation of Sodium and Potassium</a
+              >
+              <ul id="opt12">
+                <li>
+                  <a
+                    href="https://drive.google.com/file/d/1nwdM2lch-MjPawoG6TtzxvZjjtYHenTf/view?usp=sharing"
+                    >Theory</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://drive.google.com/drive/u/3/folders/1QnKGjiqL4fTqWoZFNdkJ3_f3D2JFrRkn"
+                    >Execution</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <h2>Things to Remember</h2>
+          <ol class="extra">
+            <li>
+              <a
+                class="imp"
+                href="https://drive.google.com/file/d/1jwKDoTn6N6bQObCvQ4OJBUtP6PAK1DRi/view?usp=sharing"
+              >
+                Brief procedure for experiments</a
+              >
+            </li>
+            <li>
+              <a
+                class="imp"
+                href="https://drive.google.com/file/d/1sm07HgNr0BdGydEqPpEmfeo8g6GpFOoW/view?usp=sharing"
+              >
+                Viva voce questions</a
+              >
+            </li>
+          </ol>
+        </div>
+      </article>
+      <div id="footer"></div>
+    </div>
+
+    <script>
+      var sp1 = document.getElementById("opt1");
+      var sp2 = document.getElementById("opt2");
+      var sp3 = document.getElementById("opt3");
+      var sp4 = document.getElementById("opt4");
+      var sp5 = document.getElementById("opt5");
+      var sp6 = document.getElementById("opt6");
+      var sp7 = document.getElementById("opt7");
+      var sp8 = document.getElementById("opt8");
+      var sp9 = document.getElementById("opt9");
+      var sp10 = document.getElementById("opt10");
+      var sp11 = document.getElementById("opt11");
+      var sp12 = document.getElementById("opt12");
+      function spl1(val) {
+        switch (val) {
+          case 1:
+            if (sp1.style.display === "block") {
+              sp1.style.display = "none";
+            } else {
+              sp1.style.display = "block";
+            }
+            break;
+          case 2:
+            if (sp2.style.display == "block") {
+              sp2.style.display = "none";
+            } else {
+              sp2.style.display = "block";
+            }
+            break;
+          case 3:
+            if (sp3.style.display == "block") {
+              sp3.style.display = "none";
+            } else {
+              sp3.style.display = "block";
+            }
+            break;
+          case 4:
+            if (sp4.style.display == "block") {
+              sp4.style.display = "none";
+            } else {
+              sp4.style.display = "block";
+            }
+            break;
+          case 5:
+            if (sp5.style.display == "block") {
+              sp5.style.display = "none";
+            } else {
+              sp5.style.display = "block";
+            }
+            break;
+          case 6:
+            if (sp6.style.display == "block") {
+              sp6.style.display = "none";
+            } else {
+              sp6.style.display = "block";
+            }
+            break;
+          case 7:
+            if (sp7.style.display == "block") {
+              sp7.style.display = "none";
+            } else {
+              sp7.style.display = "block";
+            }
+            break;
+          case 8:
+            if (sp8.style.display == "block") {
+              sp8.style.display = "none";
+            } else {
+              sp8.style.display = "block";
+            }
+            break;
+          case 9:
+            if (sp9.style.display == "block") {
+              sp9.style.display = "none";
+            } else {
+              sp9.style.display = "block";
+            }
+            break;
+          case 10:
+            if (sp10.style.display == "block") {
+              sp10.style.display = "none";
+            } else {
+              sp10.style.display = "block";
+            }
+            break;
+          case 11:
+            if (sp11.style.display == "block") {
+              sp11.style.display = "none";
+            } else {
+              sp11.style.display = "block";
+            }
+            break;
+          case 12:
+            if (sp12.style.display == "block") {
+              sp12.style.display = "none";
+            } else {
+              sp12.style.display = "block";
+            }
+            break;
+        }
+      }
+    </script>
+  </body>
+  <script src="../js/scripts.js"></script>
+</html>
