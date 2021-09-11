@@ -2,7 +2,7 @@ body {
   background: white;
   margin: 0;
   overflow-x: hidden;
-  overscroll-behavior-y: contain;
+  /* overscroll-behavior-y: contain; */
 }
 
 .container {
@@ -73,8 +73,8 @@ nav .content .links {
   border-radius: 5px;
   transition: all 0.3s ease;
 }
-.content .links li .active {
-  color: lightgreen;
+.active {
+  color: lightgreen !important;
 }
 .content .links li label {
   display: none;
@@ -1699,7 +1699,7 @@ h3 {
 
 #search .wrapper1 {
   max-width: 400px;
-  margin: 50px auto 150px auto;
+  margin: 150px auto;
 }
 
 #search .wrapper1 .search-input {
@@ -1765,36 +1765,6 @@ h3 {
 .activated {
   display: inline;
 }
-
-/* .search-input .autocom-box{
-  padding: 0;
-  opacity: 0;
-  pointer-events: none;
-  max-height: 280px;
-  overflow-y: auto;
-}
- 
-.search-input.active .autocom-box{
-  padding: 10px 8px;
-  opacity: 1;
-  pointer-events: auto;
-}
- 
-.autocom-box li{
-  list-style: none;
-  padding: 8px 12px;
-  display: none;
-  width: 100%;
-  cursor: default;
-  border-radius: 3px;
-}
- 
-.search-input.active .autocom-box li{
-  display: block;
-}
-.autocom-box li:hover{
-  background: #efefef;
-} */
 
 .search-input .icon {
   position: absolute;

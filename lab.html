@@ -8,7 +8,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(function () {
-        $("#navbar").load("./components/navbar.html");
         $("#footer").load("./components/footer.html");
         $("#scroll").load("./components/scrolltoTop.html");
       });
@@ -46,7 +45,32 @@
     </section>
     <div id="scroll"></div>
     <div class="container">
-      <div id="navbar"></div>
+      <div class="wrapper">
+        <nav>
+          <input type="checkbox" id="show-menu" />
+          <label for="show-menu" class="menu-icon"
+            ><i class="fas fa-bars"></i
+          ></label>
+          <div class="content">
+            <div class="logo">
+              <a href="../index.html"
+                ><img src="../Images/logo1.png" /><span>LabSpot</span></a
+              >
+            </div>
+            <ul class="links" id="links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../lab.html" class="active">Laboratory</a></li>
+              <li><a href="../feedback.html">Feedback</a></li>
+              <li class="search-btn">
+                <a href="../search.html"
+                  >Search <i class="fas fa-search"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
       <article class="main">
         <div class="lab-head">
           <h1>Welcome to our Laboratory</h1>

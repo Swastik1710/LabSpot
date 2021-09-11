@@ -5,16 +5,16 @@ window.addEventListener('load', () => {
 });
 
 // LOADER
-document.onreadystatechange = function() {
+document.onreadystatechange = function () {
   if (document.readyState !== "complete") {
-      document.querySelector("body").style.visibility = "hidden";
-      document.querySelector("body").style.overflow = "hidden"; //To prevent scrolling
-      document.querySelector("#load").style.visibility = "visible";
-  } 
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector("body").style.overflow = "hidden"; //To prevent scrolling
+    document.querySelector("#load").style.visibility = "visible";
+  }
   else {
-      document.querySelector("#load").style.display = "none";
-      document.querySelector("body").style.overflow = "visible";
-      document.querySelector("body").style.visibility = "visible";
+    document.querySelector("#load").style.display = "none";
+    document.querySelector("body").style.overflow = "visible";
+    document.querySelector("body").style.visibility = "visible";
   }
 };
 
