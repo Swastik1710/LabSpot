@@ -101,196 +101,6 @@ nav .content .links {
   display: none;
 }
 
-/* Responsive code start */
-@media screen and (max-width: 1250px) {
-  .wrapper nav {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-  nav .content .links {
-    margin-left: 30px;
-  }
-  .content .links li a {
-    padding: 8px 13px;
-  }
-}
-
-@media screen and (max-width: 832px) {
-  .wrapper .menu-icon {
-    display: block;
-  }
-  .wrapper #show-menu:checked ~ .menu-icon i::before {
-    content: "\f00d";
-  }
-  nav .content .links {
-    display: block;
-    position: fixed;
-    /* background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%); */
-    background: #2c3e50;
-    height: 210%;
-    width: 30%;
-    top: 70px;
-    left: -100%;
-    margin-left: -40px;
-    text-align: center;
-    max-width: 350px;
-    overflow-y: hidden;
-    padding-bottom: 85px;
-    transition: all 0.3s ease;
-  }
-  #search nav .content .links,
-  #contact nav .content .links {
-    padding-bottom: 0px;
-  }
-  nav .content .small1,
-  nav .content .small2 {
-    overflow-y: auto;
-  }
-  #contact nav .content .links {
-    height: 186%;
-  }
-  #search nav .content .links {
-    height: 186%;
-  }
-  .content .logo a span {
-    font-size: 32px;
-    padding-top: 18px;
-  }
-  .content .logo a img {
-    height: 65px;
-    width: 65px;
-  }
-  nav #show-menu:checked ~ .content .links {
-    left: 0%;
-    top: 80%;
-    color: white;
-  }
-  .content .links li {
-    margin: 5px 20px;
-  }
-  .content .links li a,
-  .content .links li label {
-    line-height: 40px;
-    font-size: 20px;
-    display: block;
-    padding: 2px 18px;
-    cursor: pointer;
-  }
-  .content .links li a.desktop-link {
-    display: none;
-  }
-  #form1 section {
-    margin-top: 145px;
-  }
-  #form2 section {
-    margin-top: 145px;
-  }
-  #about-page .container .main .description h1 {
-    font-size: 35px;
-  }
-  #about-page .container .main .story h1 {
-    font-size: 35px;
-  }
-  .main .exp ol li .imp {
-    font-size: 20px;
-  }
-  #mains .container .main-text {
-    margin-bottom: -10px;
-  }
-  #contact .container section {
-    margin-top: 4px;
-    min-height: 85vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  nav .content .links {
-    width: 40%;
-  }
-  .content .logo a span {
-    font-size: 26px;
-    padding-top: 18px;
-  }
-  .right form .btn button {
-    padding: 4px 12px;
-  }
-  .content .logo a img {
-    height: 60px;
-    width: 60px;
-  }
-  #about-page .container .main .description h1 {
-    font-size: 30px;
-  }
-  #about-page .container .main .story h1 {
-    font-size: 30px;
-  }
-  .main .exp ol li .imp {
-    font-size: 15px;
-    padding: 0;
-  }
-  .main .exp ol {
-    margin: 5px 30px;
-  }
-  #mains .container .main-text {
-    margin-bottom: -20px;
-  }
-  #contact .container section {
-    min-height: 75vh;
-    margin-top: 25px;
-  }
-  #contact nav .content .links {
-    height: 250%;
-  }
-}
-
-@media screen and (max-width: 446px) {
-  nav .content .links {
-    width: 50%;
-  }
-  #contact nav .content .links {
-    height: 254%;
-  }
-  #contact .container section {
-    margin-top: -4px;
-  }
-}
-
-@media screen and (max-width: 364px) {
-  #contact nav .content .links {
-    height: 312%;
-  }
-  #contact .container section {
-    margin-top: 15px;
-  }
-  nav .content .small1 {
-    overflow-y: hidden;
-  }
-}
-
-@media screen and (max-width: 315px) {
-  nav .content .links {
-    width: 100%;
-  }
-  #about-page .container .main .description h1 {
-    font-size: 20px;
-  }
-  #about-page .container .main .story h1 {
-    font-size: 20px;
-  }
-  #mains .container .main-text {
-    margin-bottom: -30px;
-  }
-  #contact nav .content .links {
-    height: 312%;
-  }
-  #contact .container section {
-    margin-top: 15px;
-  }
-  nav .content .small1 {
-    overflow-y: hidden;
-  }
-}
-
 /* FOOTER STYLES */
 
 footer {
@@ -621,10 +431,6 @@ h2 {
 }
 
 /*About Page Styles*/
-
-#about-page .container {
-  background: url(../Images/abt-bg.png);
-}
 
 #about-page .main .description {
   width: 70%;
@@ -985,9 +791,6 @@ h2 {
 }
 
 /*Contact Page*/
-#contact .container {
-  background: url(../Images/abt-bg.png);
-}
 
 .feedback-text {
   padding: 10px;
@@ -1277,7 +1080,7 @@ h3 {
 
 .base {
   display: flex;
-  margin-top: 50px;
+  margin-top: 70px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
@@ -1313,10 +1116,6 @@ h3 {
   color: cyan;
 }
 
-#lab .square img {
-  border-radius: 25px !important;
-}
-
 /* BRANCH PAGE STYLES */
 
 #brn .main .lab-head {
@@ -1338,25 +1137,11 @@ h3 {
   margin-bottom: 0px;
 }
 
-#brn .base {
-  display: flex;
-  margin-top: 50px;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
 /*ALL PAGES BACKGROUND STYLES*/
 
-/* #phy .container chem .container,
-#cps .container,
-#ds .container,
-#ade .container,
-#bee .container,
-#search .container, */
 .container {
   background: url(../Images/abt-bg.png);
 }
-
 
 /***SUBJECT WISE STYLES***/
 
@@ -1538,10 +1323,6 @@ h3 {
   line-height: 41px;
   font-size: 35px;
   color: white;
-}
-
-#mains .container {
-  background: url(../Images/abt-bg.png);
 }
 
 #mains .main {
@@ -1832,4 +1613,195 @@ h3 {
 #installContainer button:hover {
   background: pink;
   box-shadow: 6px 6px 6px purple;
+}
+
+
+/* Responsive code start */
+@media screen and (max-width: 1250px) {
+  .wrapper nav {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  nav .content .links {
+    margin-left: 30px;
+  }
+  .content .links li a {
+    padding: 8px 13px;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  .wrapper .menu-icon {
+    display: block;
+  }
+  .wrapper #show-menu:checked ~ .menu-icon i::before {
+    content: "\f00d";
+  }
+  nav .content .links {
+    display: block;
+    position: fixed;
+    /* background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%); */
+    background: #2c3e50;
+    height: 210%;
+    width: 30%;
+    top: 70px;
+    left: -100%;
+    margin-left: -40px;
+    text-align: center;
+    max-width: 350px;
+    overflow-y: hidden;
+    padding-bottom: 85px;
+    transition: all 0.3s ease;
+  }
+  #search nav .content .links,
+  #contact nav .content .links {
+    padding-bottom: 0px;
+  }
+  nav .content .small1,
+  nav .content .small2 {
+    overflow-y: auto;
+  }
+  #contact nav .content .links {
+    height: 186%;
+  }
+  #search nav .content .links {
+    height: 186%;
+  }
+  .content .logo a span {
+    font-size: 32px;
+    padding-top: 18px;
+  }
+  .content .logo a img {
+    height: 65px;
+    width: 65px;
+  }
+  nav #show-menu:checked ~ .content .links {
+    left: 0%;
+    top: 80%;
+    color: white;
+  }
+  .content .links li {
+    margin: 5px 20px;
+  }
+  .content .links li a,
+  .content .links li label {
+    line-height: 40px;
+    font-size: 20px;
+    display: block;
+    padding: 2px 18px;
+    cursor: pointer;
+  }
+  .content .links li a.desktop-link {
+    display: none;
+  }
+  #about-page .container .main .description h1 {
+    font-size: 35px;
+  }
+  #about-page .container .main .story h1 {
+    font-size: 35px;
+  }
+  .main .exp ol li .imp {
+    font-size: 20px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -10px;
+  }
+  #contact .container section {
+    margin-top: 4px;
+    min-height: 85vh;
+  }
+  .banner a{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  nav .content .links {
+    width: 40%;
+  }
+  .content .logo a span {
+    font-size: 26px;
+    padding-top: 18px;
+  }
+  .right form .btn button {
+    padding: 4px 12px;
+  }
+  .content .logo a img {
+    height: 60px;
+    width: 60px;
+  }
+  #about-page .container .main .description h1 {
+    font-size: 30px;
+  }
+  #about-page .container .main .story h1 {
+    font-size: 30px;
+  }
+  .main .exp ol li .imp {
+    font-size: 15px;
+    padding: 0;
+  }
+  .main .exp ol {
+    margin: 5px 30px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -20px;
+  }
+  #contact .container section {
+    min-height: 75vh;
+    margin-top: 25px;
+  }
+  #contact nav .content .links {
+    height: 250%;
+  }
+  .banner a{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  nav .content .links {
+    width: 50%;
+  }
+  #contact nav .content .links {
+    height: 254%;
+  }
+  #contact .container section {
+    margin-top: -4px;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  #contact nav .content .links {
+    height: 312%;
+  }
+  #contact .container section {
+    margin-top: 15px;
+  }
+  nav .content .small1 {
+    overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  nav .content .links {
+    width: 100%;
+  }
+  #about-page .container .main .description h1 {
+    font-size: 20px;
+  }
+  #about-page .container .main .story h1 {
+    font-size: 20px;
+  }
+  #mains .container .main-text {
+    margin-bottom: -30px;
+  }
+  #contact nav .content .links {
+    height: 312%;
+  }
+  #contact .container section {
+    margin-top: 15px;
+  }
+  nav .content .small1 {
+    overflow-y: hidden;
+  }
 }
