@@ -1081,6 +1081,7 @@ h3 {
 .base {
   display: flex;
   margin-top: 70px;
+  margin-bottom: 50px;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
