@@ -81,7 +81,7 @@ nav .content .links {
 }
 .content .links li a:hover,
 .content .links li label:hover {
-  color: #323c4e;
+  color: #323c4e !important;
   background: white;
 }
 
