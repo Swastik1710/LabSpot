@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
 });
 
 // LOADER
-var loading = document.getElementById("loader");
+var loading = document.getElementById("load");
 function func() {
   loading.style.display = "none";
 }
