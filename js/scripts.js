@@ -5,10 +5,18 @@ window.addEventListener('load', () => {
 });
 
 // LOADER
-var loading = document.getElementById("load");
-function func() {
-  loading.style.display = "none";
-}
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+      document.querySelector("body").style.visibility = "hidden";
+      document.querySelector("body").style.overflow = "hidden"; //To prevent scrolling
+      document.querySelector("#load").style.visibility = "visible";
+  } 
+  else {
+      document.querySelector("#load").style.display = "none";
+      document.querySelector("body").style.overflow = "visible";
+      document.querySelector("body").style.visibility = "visible";
+  }
+};
 
 // SOCIAL MEDIA BUTTONS
 $(".icons li").click(function () {
