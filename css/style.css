@@ -1094,7 +1094,7 @@ h3 {
   text-align: center;
   background: linear-gradient(#E96874, #6E3663, #2B0830);
   border-radius: 50px;
-  box-shadow: 0 6px 12px -3px rgba(0,0,0,.3);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   color: #fff;
   padding: 10px;
 }
