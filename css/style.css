@@ -2,7 +2,7 @@ body {
   background: white;
   margin: 0;
   overflow-x: hidden;
-  /* overscroll-behavior-y: contain; */
+  overscroll-behavior-y: contain;
 }
 
 .container {
@@ -16,7 +16,8 @@ body {
 /* MENU STYLES */
 
 .wrapper {
-  /* position: fixed; */
+  position: relative;
+  z-index: 99;
   /* background: linear-gradient(#03a9f4 0%, #3a78b7 50%, #607d8b 100%); */
   filter: hue-rotate(0deg);
   /* animation: animate 10s linear infinite; */
@@ -434,7 +435,7 @@ h2 {
 
 #about-page .main .description {
   width: 70%;
-  margin: 40px auto;
+  margin: 0px auto;
 }
 
 #about-page .main .description h2 {
@@ -470,7 +471,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   width: 70%;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 
 #about-page .main .story h1 {
@@ -492,140 +493,7 @@ h2 {
   line-height: 40px;
 }
 
-/* .imgbox {
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-.wrapper1 {
-  max-width: 1200px;
-}
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.gallery .image {
-  padding: 7px;
-  width: calc(100% / 3);
-}
-
-.gallery .image span {
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-.gallery .image img {
-  width: 100%;
-  vertical-align: middle;
-  transition: all 0.3s ease;
-}
-.gallery .image:hover img {
-  transform: scale(1.1);
-}
-
-.preview-box {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.9);
-  background: #fff;
-  max-width: 700px;
-  width: 100%;
-  z-index: 5;
-  opacity: 0;
-  pointer-events: none;
-  border-radius: 3px;
-  padding: 0 5px 5px 5px;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-.preview-box.show {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate(-50%, -50%) scale(1);
-  transition: all 0.3s ease;
-}
-.preview-box .details {
-  display: flex;
-  align-items: center;
-  padding: 12px 15px 12px 10px;
-  justify-content: space-between;
-}
-.preview-box .details .title {
-  display: flex;
-  font-size: 18px;
-  font-weight: 400;
-}
-.details .title p {
-  margin: 0 5px;
-}
-.details .title p.current-img {
-  font-weight: 500;
-}
-.details .icon {
-  color: #007bff;
-  font-size: 20px;
-  cursor: pointer;
-}
-.preview-box .image-box {
-  display: flex;
-  width: 100%;
-  position: relative;
-}
-.image-box .slide {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #fff;
-  font-size: 30px;
-  cursor: pointer;
-  height: 50px;
-  width: 60px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 3px;
-}
-.slide.prev {
-  left: 0px;
-}
-.slide.next {
-  right: 0px;
-}
-.image-box img {
-  width: 100%;
-  border-radius: 0 0 3px 3px;
-}
-.shadow {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 2;
-  display: none;
-  background: rgba(0, 0, 0, 0.45);
-}
-
-@media (max-width: 1000px) {
-  .gallery .image {
-    width: calc(100% / 2);
-  }
-}
-@media (max-width: 600px) {
-  .gallery .image {
-    width: 100%;
-    padding: 4px;
-  }
-} */
-
 /* CARDS STYLES */
-
-.wrapper2 {
-  margin-top: 50px;
-  background: #81c644;
-}
 
 #about-page .main .team-name h1 {
   font-size: 50px;
@@ -792,11 +660,12 @@ h2 {
 
 /*Contact Page*/
 
-.feedback-text {
-  padding: 10px;
+#contact .main .content{
+  margin: 0 auto;
+  max-width: 705px;
 }
 
-.feedback-text h2 {
+/* .feedback-text h2 {
   color: green;
   font-size: 24px;
   text-align: center;
@@ -804,8 +673,8 @@ h2 {
   font-weight: lighter;
   letter-spacing: 2px;
   line-height: 30px;
-  margin: 20px 0;
-}
+  margin: 35px 0 15px 0;
+} */
 
 #contact section {
   display: flex;
@@ -1062,25 +931,30 @@ h3 {
 
 #lab .main .lab-head {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 #lab .main .lab-head h1 {
   font-family: "Algerian";
   text-decoration: underline;
   text-decoration-color: green;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+#lab .main .lottie-container {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 #lab .main .lab-head h2 {
   color: black;
   font-size: 32px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 .base {
   display: flex;
-  margin-top: 70px;
+  margin-top: 30px;
   margin-bottom: 50px;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -1093,7 +967,6 @@ h3 {
   line-height: 200px;
   width: 400px;
   text-align: center;
-  /* background: linear-gradient(#E96874, #6E3663, #2B0830); */
   background-color: #0cbaba;
   background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
   border-radius: 50px;
@@ -1281,54 +1154,6 @@ h3 {
 
 /* HOME PAGE STYLES */
 
-.content1 {
-  height: 450px;
-  width: 850px;
-  position: relative;
-}
-.content1 .images {
-  height: 100%;
-  width: 100%;
-}
-.content1 .images img {
-  height: 100%;
-  width: 100%;
-}
-.btm-slides {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-.btm-slides span {
-  height: 15px;
-  width: 50px;
-  border: 2px solid white;
-  margin: 0 3px;
-  cursor: pointer;
-}
-.sliders {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 45px;
-  cursor: pointer;
-  border: 2px solid white;
-  background: rgba(255, 255, 255, 0.1);
-}
-.sliders:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-.right {
-  right: 0;
-}
-.sliders span {
-  line-height: 41px;
-  font-size: 35px;
-  color: white;
-}
-
 #mains .main {
   display: flex;
   align-items: center;
@@ -1484,7 +1309,11 @@ h3 {
 
 #search .wrapper1 {
   max-width: 400px;
-  margin: 150px auto;
+  margin: 0 auto;
+}
+
+#search .wrapper1 .search-div {
+  margin-bottom: 150px;
 }
 
 #search .wrapper1 .search-input {
@@ -1656,20 +1485,6 @@ h3 {
     padding-bottom: 85px;
     transition: all 0.3s ease;
   }
-  #search nav .content .links,
-  #contact nav .content .links {
-    padding-bottom: 0px;
-  }
-  nav .content .small1,
-  nav .content .small2 {
-    overflow-y: auto;
-  }
-  #contact nav .content .links {
-    height: 186%;
-  }
-  #search nav .content .links {
-    height: 186%;
-  }
   .content .logo a span {
     font-size: 32px;
     padding-top: 18px;
@@ -1710,11 +1525,13 @@ h3 {
     margin-bottom: -10px;
   }
   #contact .container section {
-    margin-top: 4px;
     min-height: 85vh;
   }
   .banner a {
     font-size: 40px;
+  }
+  .feedback-text h2 {
+    margin: 10px 0 0 0;
   }
 }
 
@@ -1745,16 +1562,13 @@ h3 {
   }
   .main .exp ol {
     margin: 5px 30px;
+    width: 65% !important;
   }
   #mains .container .main-text {
     margin-bottom: -20px;
   }
   #contact .container section {
     min-height: 75vh;
-    margin-top: 25px;
-  }
-  #contact nav .content .links {
-    height: 250%;
   }
   .banner a {
     font-size: 35px;
@@ -1765,23 +1579,18 @@ h3 {
   nav .content .links {
     width: 50%;
   }
-  #contact nav .content .links {
-    height: 254%;
-  }
-  #contact .container section {
-    margin-top: -4px;
-  }
 }
 
 @media screen and (max-width: 364px) {
-  #contact nav .content .links {
-    height: 312%;
+  .main .exp ol {
+    margin: 5px 10px;
+    width: 70% !important;
   }
-  #contact .container section {
-    margin-top: 15px;
+  .main .exp ol li {
+    font-size: 15px;
   }
-  nav .content .small1 {
-    overflow-y: hidden;
+  .exp ol li ul li a {
+    font-size: 14px;
   }
 }
 
@@ -1797,14 +1606,5 @@ h3 {
   }
   #mains .container .main-text {
     margin-bottom: -30px;
-  }
-  #contact nav .content .links {
-    height: 312%;
-  }
-  #contact .container section {
-    margin-top: 15px;
-  }
-  nav .content .small1 {
-    overflow-y: hidden;
   }
 }

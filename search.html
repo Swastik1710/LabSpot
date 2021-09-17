@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body id="search">
     <section id="load">
@@ -58,7 +59,7 @@
                 ><img src="./Images/logo1.png" /><span>LabSpot</span></a
               >
             </div>
-            <ul class="links small2">
+            <ul class="links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="lab.html">Laboratory</a></li>
@@ -73,50 +74,63 @@
         </nav>
       </div>
       <div class="wrapper1">
-        <div class="search-input">
-          <input
-            type="text"
-            id="searchitem"
-            placeholder="Type to Search..."
-            onkeyup="search()"
-          />
-          <div class="icon"><i class="fas fa-search"></i></div>
+        <lottie-player
+          src="https://assets1.lottiefiles.com/packages/lf20_n2m0isqh.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+        <div class="search-div">
+          <div class="search-input">
+            <input
+              type="text"
+              id="searchitem"
+              placeholder="Type to Search..."
+              onkeyup="search()"
+            />
+            <div class="icon"><i class="fas fa-search"></i></div>
+          </div>
+          <ul class="box1" id="searchlist">
+            <li><a href="./lab.html">Laboratory</a></li>
+            <li><a href="./firstYear/first_subs.html">First Year</a></li>
+            <li><a href="./firstYear/first_subs.html">1st Year</a></li>
+            <li><a href="./coming_soon.html">Second Year</a></li>
+            <li><a href="./coming_soon.html">2nd Year</a></li>
+            <li><a href="./coming_soon.html">Third Year</a></li>
+            <li><a href="./coming_soon.html">3rd Year</a></li>
+            <li><a href="./coming_soon.html">Fourth Year</a></li>
+            <li><a href="./coming_soon.html">4th Year</a></li>
+            <li><a href="./firstYear/first_subs_phy.html">Physics Cycle</a></li>
+            <li>
+              <a href="./firstYear/first_subs_chem.html">Chemistry Cycle</a>
+            </li>
+            <li><a href="./firstYear/phy.html">Physics</a></li>
+            <li><a href="./firstYear/chem.html">Chemistry</a></li>
+            <li>
+              <a href="./firstYear/bee.html">Basic Electrical Engineering</a>
+            </li>
+            <li><a href="./firstYear/cps.html">C Programming</a></li>
+            <li>
+              <a href="./secondYear/mces.html">Microcontroller and Embedded Systems</a>
+            </li>
+            <li>
+              <a href="./secondYear/daa.html">Design and Analysis of Algorithms</a>
+            </li>
+            <li>
+              <a href="./secondYear/ade.html">Analog and Digital Electronics</a>
+            </li>
+            <li>
+              <a href="./secondYear/ds.html">Data Structures</a>
+            </li>
+            <li><a href="./secondYear/cps.html">CPS</a></li>
+            <li><a href="./secondYear/bee.html">BEE</a></li>
+            <li><a href="./secondYear/daa.html">DAA</a></li>
+            <li><a href="./secondYear/mces.html">MCES</a></li>
+            <li><a href="./secondYear/ds.html">DS</a></li>
+            <li><a href="./secondYear/ade.html">ADE</a></li>
+          </ul>
         </div>
-        <ul class="box1" id="searchlist">
-          <li><a href="./lab.html">Laboratory</a></li>
-          <li><a href="./firstYear/first_subs.html">First Year</a></li>
-          <li><a href="./firstYear/first_subs.html">1st Year</a></li>
-          <li><a href="./secondYear/second_branch.html">Second Year</a></li>
-          <li><a href="./secondYear/second_branch.html">2nd Year</a></li>
-          <li><a href="./thirdYear/third_branch.html">Third Year</a></li>
-          <li><a href="./thirdYear/third_branch.html">3rd Year</a></li>
-          <li><a href="./fourthYear/fourth_branch.html">Fourth Year</a></li>
-          <li><a href="./fourthYear/fourth_branch.html">4th Year</a></li>
-          <li><a href="./firstYear/first_subs_phy.html">Physics Cycle</a></li>
-          <li>
-            <a href="./firstYear/first_subs_chem.html">Chemistry Cycle</a>
-          </li>
-          <li><a href="./firstYear/phy.html">Physics</a></li>
-          <li><a href="./firstYear/chem.html">Chemistry</a></li>
-          <li>
-            <a href="./firstYear/bee.html">Basic Electrical Engineering</a>
-          </li>
-          <li><a href="./firstYear/cps.html">C Programming</a></li>
-          <li>
-            <a href="./secondYear/mces.html"
-              >Microcontroller and Embedded Systems</a
-            >
-          </li>
-          <li>
-            <a href="./secondYear/daa.html"
-              >Design and Analysis of Algorithms</a
-            >
-          </li>
-          <li><a href="./secondYear/cps.html">CPS</a></li>
-          <li><a href="./secondYear/bee.html">BEE</a></li>
-          <li><a href="./secondYear/daa.html">DAA</a></li>
-          <li><a href="./secondYear/mces.html">MCES</a></li>
-        </ul>
       </div>
       <div id="footer"></div>
     </div>

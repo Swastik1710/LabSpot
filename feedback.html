@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
 
   <body id="contact">
@@ -59,7 +60,7 @@
                 ><img src="./Images/logo1.png" /><span>LabSpot</span></a
               >
             </div>
-            <ul class="links small1">
+            <ul class="links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="lab.html">Laboratory</a></li>
@@ -71,58 +72,67 @@
           </div>
         </nav>
       </div>
-      <!-- <div id="navbar"></div> -->
-      <div class="feedback-text">
+      <!-- <div class="feedback-text">
         <h2>
           We would love to hear back from you. Do let us know your views and
           suggestions in the form below.
         </h2>
-      </div>
-
-      <section>
-        <div class="box">
-          <div class="form">
-            <h2>Get in Touch</h2>
-            <form action="https://formspree.io/f/myylkopv" method="POST">
-              <div class="inputBox">
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  name="Name"
-                  required
-                />
-              </div>
-              <div class="inputBox">
-                <input
-                  type="email"
-                  placeholder="Your Email-id"
-                  name="_replyto"
-                  required
-                />
-              </div>
-              <div class="inputBox">
-                <input
-                  type="text"
-                  placeholder="Subject"
-                  name="Subject"
-                  required
-                />
-              </div>
-              <div class="inputBox">
-                <textarea
-                  type="text"
-                  placeholder="Message"
-                  name="Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="inputBox">
-                <button>Send</button>
-              </div>
-            </form>
-          </div>
+      </div> -->
+      <div class="main">
+        <div class="content">
+          <lottie-player
+            src="https://assets2.lottiefiles.com/private_files/lf30_ltuqrtmn.json"
+            background="transparent"
+            speed="1"
+            loop
+            autoplay
+          ></lottie-player>
         </div>
-      </section>
+        <section>
+          <div class="box">
+            <div class="form">
+              <h2>Get in Touch</h2>
+              <form action="https://formspree.io/f/myylkopv" method="POST">
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    name="Name"
+                    required
+                  />
+                </div>
+                <div class="inputBox">
+                  <input
+                    type="email"
+                    placeholder="Your Email-id"
+                    name="_replyto"
+                    required
+                  />
+                </div>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    placeholder="Subject"
+                    name="Subject"
+                    required
+                  />
+                </div>
+                <div class="inputBox">
+                  <textarea
+                    type="text"
+                    placeholder="Message"
+                    name="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div class="inputBox">
+                  <button>Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
       <div id="footer"></div>
     </div>
   </body>

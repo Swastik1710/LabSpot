@@ -1,122 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="1366px, initial-scale=1.0">
-    <title>Coming Soon</title>
-</head>
-<style>
-    body,
-    html {
-        height: 100%;
-        margin: 0;
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      overflow-y: hidden;
     }
-
-    .bgimg {
-        background-image: url("./Images/soon.jpg");
-        height: 100%;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        color: white;
-        font-family: "Courier New", Courier, monospace;
-        font-size: 25px;
+    .container {
+      width: 100%;
+      margin: 0 auto;
     }
-
-    .topleft {
-        position: absolute;
-        top: 0;
-        left: 16px;
+    /* .btn {
+      text-align: center;
     }
-
-    .bottomright {
-        position: absolute;
-        bottom: 10px;
-        right: 16px;
-        text-align: center;
+    .btn a {
+      text-decoration: none;
+      background: #2c3e50;
+      border: 3px solid #2c3e50;
+      border-radius: 10px;
+      color: lightgreen;
+      padding: 5px;
+      font-size: 20px;
     }
-
-    .bottomright a {
-        text-decoration: none;
-        background: cyan;
-        border: 3px solid cyan;
-        display: inline-block;
-        border-radius: 10px;
-        margin-left: 0px;
-        color: #2c3e50;
-        padding: 5px;
+    .btn a:hover {
+      background: none;
+      color: #2c3e50;
+    } */
+    .lottie {
+      margin: 0 auto;
+      max-width: 650px;
+      /* width: 50%; */
     }
-
-    .bottomright a:hover {
-        background: none;
-        color: white;
-    }
-
-    .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        font-size: 18px;
-    }
-
-    hr {
-        margin: auto;
-        width: 50%;
-    }
-</style>
-
-
-<body>
-
-    <div class="bgimg">
-        <div class="topleft">
-            <a href="index.html"><img style="height: 100px; margin-top: 20px;" src="./Images/logo1.png"></a>
-        </div>
-        <div class="middle">
-            <h1>COMING SOON</h1>
-            <hr>
-            <p id="demo"> </p>
-        </div>
-        <div class="bottomright">
-            <p>Work in Progress</p>
-            <a href="javascript:history.back()">Go Back</a>
-        </div>
+  </style>
+  <body>
+    <div class="container">
+      <div class="lottie">
+        <lottie-player
+          src="https://assets4.lottiefiles.com/packages/lf20_rz0hyab1.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      <!-- <div class="btn">
+        <a href="javascript:history.back()">Go Back</a>
+      </div> -->
     </div>
-
-</body>
-
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("October 1, 2021 00:00:00").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function () {
-
-        // Get todays date and time
-        var now = new Date().getTime();
-
-        // Find the distance between now an the count down date
-        var distance = countDownDate - now;
-
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-        // Display the result in an element with id="demo"
-        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
-
-        // If the count down is finished, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-        }
-    }, 10);
-</script>
-
+  </body>
 </html>
