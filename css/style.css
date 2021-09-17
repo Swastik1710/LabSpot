@@ -467,6 +467,11 @@ h2 {
   margin-bottom: 30px;
 }
 
+#about-page .main .lottie {
+  margin: 0 auto;
+  max-width: 750px;
+}
+
 #about-page .main .story {
   margin-left: auto;
   margin-right: auto;
