@@ -18,6 +18,20 @@ document.onreadystatechange = function () {
   }
 };
 
+// Experiment Options
+var expList = document.getElementsByClassName("imp");
+var i;
+for (i = 0; i < expList.length; i++) {
+  expList[i].addEventListener("click", function () {
+    var options = this.nextElementSibling;
+    if (options.style.display === "block") {
+      options.style.display = "none";
+    } else {
+      options.style.display = "block";
+    }
+  });
+}
+
 // SOCIAL MEDIA BUTTONS
 $(".icons li").click(function () {
   $(this).toggleClass("shadow-2").siblings();
