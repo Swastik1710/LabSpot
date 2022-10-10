@@ -1280,8 +1280,9 @@ h3 {
 }
 
 .button:hover {
-  background: pink;
-  box-shadow: 6px 6px 6px purple;
+  background: #2c3e50;
+  color: lightgreen;
+  box-shadow: 6px 6px 6px lightgreen;
 }
 
 .btn1 {
@@ -1656,3 +1657,80 @@ h3 {
 #Btn {
   cursor: pointer;
 }
+
+
+/* Search Bar */
+
+#searchbar{
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  margin-left: 10px;
+  /* font-size: 16px; */
+  font-weight: 500;
+}
+
+input[type=text] {
+   width: 50%;
+   -webkit-transition: width 0.15s ease-in-out;
+   transition: width 0.15s ease-in-out;
+   outline: none;
+   border: 2px solid white;
+}
+
+input[type=text]::placeholder{
+  color: white;
+}
+.search
+{
+  z-index: 999;
+  display: none;
+  position: absolute;
+  background: #2c3e50;
+  width: 25%;
+  transform: translate(145%,0%);
+  text-align: center;
+  font-size: 25px;
+  /* padding: 5px; */
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 2px solid white;
+  border-top: none;
+}
+
+@media screen and (max-width: 832px) {
+  .search{
+    transform: translate(100%, 0%);
+    width: 35%;
+  }
+}
+
+
+@media screen and (max-width: 576px) 
+{
+  .search
+  {
+    transform: translate(100%,0%);
+    width: 50%;
+    font-size: 18px;
+    padding: 0px;
+    border-bottom-right-radius: 0;
+  }
+}
+
+#searchlist{
+  list-style: none;
+  margin-right: 40px;
+}
+
+#searchlist a:hover{
+  color: lightgreen;
+}
+
+.tags{
+display: none; 
+margin: 10px;
+color: white;   
+} 

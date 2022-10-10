@@ -11,6 +11,7 @@
         $("#navbar").load("./components/navbar.html");
         $("#footer").load("./components/footer.html");
         $("#scroll").load("./components/scrolltoTop.html");
+        $("#search-list").load("../components/search-list.html");
       });
     </script>
     <link
@@ -66,12 +67,13 @@
               <li><a href="lab.html">Laboratory</a></li>
               <li><a href="feedback.html" class="active">Feedback</a></li>
               <li class="search-btn">
-                <a href="search.html">Search <i class="fas fa-search"></i></a>
+                <input id="searchbar" onkeyup="search_lab()" type="text" name="search" placeholder="Search...&#128269">
               </li>
             </ul>
           </div>
         </nav>
       </div>
+      <div id="search-list"></div>
       <!-- <div class="feedback-text">
         <h2>
           We would love to hear back from you. Do let us know your views and

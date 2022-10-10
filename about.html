@@ -10,6 +10,7 @@
       $(function () {
         $("#footer").load("./components/footer.html");
         $("#scroll").load("./components/scrolltoTop.html");
+        $("#search-list").load("../components/search-list.html");
       });
     </script>
     <link
@@ -64,14 +65,17 @@
               <li><a href="../lab.html">Laboratory</a></li>
               <li><a href="../feedback.html">Feedback</a></li>
               <li class="search-btn">
-                <a href="../search.html"
+                <!-- <a href="../search.html"
                   >Search <i class="fas fa-search"></i
-                ></a>
+                ></a> -->
+
+                <input id="searchbar" onkeyup="search_lab()" type="text" name="search" placeholder="Search...&#128269">
               </li>
             </ul>
           </div>
         </nav>
       </div>
+      <div id="search-list"></div>
       <div class="main">
         <div class="lottie">
           <lottie-player
@@ -85,7 +89,7 @@
         <div class="story">
           <h1>OUR STORY</h1>
           <h2>
-            It was during the First Semester Lab Externals when we realized that
+            It was during the Third Semester Lab Externals when we realized that
             recalling all the experiments we conducted during the regular lab
             sessions was the most challenging task and also the main reason
             behind us not being able to score good marks.This led us to the idea
@@ -95,7 +99,7 @@
           <h1>WHAT WE BRING TO THE TABLE</h1>
           <h2>
             We provide Theory, Explanation Videos, and Viva questions for all
-            the lab subjects of all semesters respectively covered under VTU.
+            the lab subjects of all semesters of the ISE Dept.
             This would help save time and hard work involved in searching the
             perfect Lab resources on the internet.
           </h2>
@@ -109,7 +113,7 @@
             and spread knowledge all over the globe, cause
             <span style="color: green">'Knowledge grows with Sharing'</span>.
             Being said so, not only the study materials but also the
-            <a href="https://github.com/Swastik1710">SOURCE CODE</a> of this
+            <a href="https://github.com/Swastik1710/LabSpot">SOURCE CODE</a> of this
             Website is available for all to use, learn and contribute, thus
             promoting Open Source Software.
           </h2>

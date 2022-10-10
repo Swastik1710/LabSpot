@@ -1,158 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="manifest" href="manifest.json" />
-    <link rel="apple-touch-icon" href="Images/logo1.png" />
-    <meta name="apple-mobile-web-app-status-bar" content="#2c3e50" />
-    <meta name="theme-color" content="#2c3e50" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-      $(function () {
-        $("#footer").load("./components/footer.html");
-        $("#scroll").load("./components/scrolltoTop.html");
-      });
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-  </head>
-  <body id="mains">
-    <section id="load">
-      <div class="loading">
-        <div class="blocks" style="--i: 1"></div>
-        <div class="blocks" style="--i: 2"></div>
-        <div class="blocks" style="--i: 3"></div>
-        <div class="blocks" style="--i: 4"></div>
-        <div class="blocks" style="--i: 5"></div>
-        <div class="blocks" style="--i: 6"></div>
-        <div class="blocks" style="--i: 7"></div>
-        <div class="blocks" style="--i: 8"></div>
-        <div class="blocks" style="--i: 9"></div>
-        <div class="blocks" style="--i: 10"></div>
-        <div class="blocks" style="--i: 11"></div>
-        <div class="blocks" style="--i: 12"></div>
-        <div class="blocks" style="--i: 13"></div>
-        <div class="blocks" style="--i: 14"></div>
-        <div class="blocks" style="--i: 15"></div>
-        <div class="blocks" style="--i: 16"></div>
-        <div class="blocks" style="--i: 17"></div>
-        <div class="blocks" style="--i: 18"></div>
-        <div class="blocks" style="--i: 19"></div>
-        <div class="blocks" style="--i: 20"></div>
-        <h3>Loading...</h3>
-      </div>
-    </section>
-    <div id="scroll"></div>
-    <div class="container">
-      <div class="wrapper">
-        <nav>
-          <input type="checkbox" id="show-menu" />
-          <label for="show-menu" class="menu-icon"
-            ><i class="fas fa-bars"></i
-          ></label>
-          <div class="content">
-            <div class="logo">
-              <a href="../index.html"
-                ><img src="../Images/logo1.png" /><span>LabSpot</span></a
-              >
-            </div>
-            <ul class="links" id="links">
-              <li><a href="../index.html" class="active">Home</a></li>
-              <li><a href="../about.html">About</a></li>
-              <li><a href="../lab.html">Laboratory</a></li>
-              <li><a href="../feedback.html">Feedback</a></li>
-              <li class="search-btn">
-                <a href="../search.html"
-                  >Search <i class="fas fa-search"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <div class="main-text">
-        <span>LabSpot</span>
-        <h2>
-          One-stop solution to lab experiments of all semesters and subjects of ISE Department.
-        </h2>
-        <p>
-          This is a portal for all lab experiments included in the VTU syllabus,
-          including lab manuals and explanation videos for all the experiments of the Department of Information Science.
-          Preparing for the Lab exams won't be a nightmare anymore.
-        </p>
-      </div>
-      <div class="main">
-        <div class="content1">
-          <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_u4rzoljr.json"  background="transparent"  speed="1" loop autoplay></lottie-player>
-        </div>
-      </div>
-      <div class="main-text2">
-        <p>
-          To get started, head over to the Laboratory page by clicking the
-          button below<br /><span class="arrow"
-            ><i class="fas fa-arrow-down"></i
-          ></span>
-        </p>
-        <div class="btn1">
-          <button onclick="document.location='lab.html'" class="button">
-            Laboratory
-          </button>
-        </div>
-      </div>
-      <div id="installContainer" class="hidden">
-        <p>
-          To get an in-app experience please download our app by clicking the
-          button below<br /><span class="arrow"
-            ><i class="fas fa-arrow-down"></i
-          ></span>
-        </p>
-        <button id="butInstall" type="button">Install</button>
-      </div>
-      <div id="footer"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="Images/logo1.png" />
+  <meta name="apple-mobile-web-app-status-bar" content="#2c3e50" />
+  <meta name="theme-color" content="#2c3e50" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $("#footer").load("./components/footer.html");
+      $("#scroll").load("./components/scrolltoTop.html");
+      $("#search-list").load("../components/search-list.html");
+    });
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body id="mains">
+  <section id="load">
+    <div class="loading">
+      <div class="blocks" style="--i: 1"></div>
+      <div class="blocks" style="--i: 2"></div>
+      <div class="blocks" style="--i: 3"></div>
+      <div class="blocks" style="--i: 4"></div>
+      <div class="blocks" style="--i: 5"></div>
+      <div class="blocks" style="--i: 6"></div>
+      <div class="blocks" style="--i: 7"></div>
+      <div class="blocks" style="--i: 8"></div>
+      <div class="blocks" style="--i: 9"></div>
+      <div class="blocks" style="--i: 10"></div>
+      <div class="blocks" style="--i: 11"></div>
+      <div class="blocks" style="--i: 12"></div>
+      <div class="blocks" style="--i: 13"></div>
+      <div class="blocks" style="--i: 14"></div>
+      <div class="blocks" style="--i: 15"></div>
+      <div class="blocks" style="--i: 16"></div>
+      <div class="blocks" style="--i: 17"></div>
+      <div class="blocks" style="--i: 18"></div>
+      <div class="blocks" style="--i: 19"></div>
+      <div class="blocks" style="--i: 20"></div>
+      <h3>Loading...</h3>
     </div>
-    <script>
-      const divInstall = document.getElementById("installContainer");
-      const butInstall = document.getElementById("butInstall");
+  </section>
+  <div id="scroll"></div>
+  <div class="container">
+    <div class="wrapper">
+      <nav>
+        <input type="checkbox" id="show-menu" />
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+        <div class="content">
+          <div class="logo">
+            <a href="../index.html"><img src="../Images/logo1.png" /><span>LabSpot</span></a>
+          </div>
+          <ul class="links" id="links">
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../lab.html">Laboratory</a></li>
+            <li><a href="../feedback.html">Feedback</a></li>
+            <li>
+              <!-- <a href="../search.html"
+                  >Search <i class="fas fa-search"></i
+                ></a> -->
+              <input id="searchbar" onkeyup="search_lab()" type="text" name="search" placeholder="Search...&#128269">
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="search-list"></div>
+    <div class="main-text">
+      <span>LabSpot</span>
+      <h2>
+        One-stop solution to lab experiments of all semesters and subjects of the <span
+          style="text-decoration: underline; font-size: 36px; color: black; text-decoration-color: green;">ISE
+          Department</span>.
+      </h2>
+      <p>
+        This is a portal for all lab experiments included in the VTU syllabus,
+        including lab manuals and explanation videos for all the experiments of the <span
+          style="color: green; text-decoration: none; font-size: 28px;">Department of Information Science</span>.
+        Preparing for the Lab exams won't be a nightmare anymore.
+      </p>
+    </div>
+    <div class="main">
+      <div class="content1">
+        <lottie-player src="https://assets4.lottiefiles.com/private_files/lf30_u4rzoljr.json" background="transparent"
+          speed="1" loop autoplay></lottie-player>
+        <!-- <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_i9mtrven.json" background="transparent"
+          speed="1" loop autoplay></lottie-player> -->
+      </div>
+    </div>
+    <div class="main-text2">
+      <p>
+        To get started, head over to the Laboratory page by clicking the
+        button below<br /><span class="arrow"><i class="fas fa-arrow-down"></i></span>
+      </p>
+      <div class="btn1">
+        <button onclick="document.location='lab.html'" class="button">
+          Laboratory
+        </button>
+      </div>
+    </div>
+    <div id="installContainer" class="hidden">
+      <p>
+        To get an in-app experience please download our app by clicking the
+        button below<br /><span class="arrow"><i class="fas fa-arrow-down"></i></span>
+      </p>
+      <button id="butInstall" type="button">Install</button>
+    </div>
+    <div id="footer"></div>
+  </div>
+  <script>
+    const divInstall = document.getElementById("installContainer");
+    const butInstall = document.getElementById("butInstall");
 
-      window.addEventListener("beforeinstallprompt", (event) => {
-        console.log("👍", "beforeinstallprompt", event);
-        // Stash the event so it can be triggered later.
-        window.deferredPrompt = event;
-        // Remove the 'hidden' class from the install button container
-        divInstall.classList.toggle("hidden", false);
-      });
+    window.addEventListener("beforeinstallprompt", (event) => {
+      console.log("👍", "beforeinstallprompt", event);
+      // Stash the event so it can be triggered later.
+      window.deferredPrompt = event;
+      // Remove the 'hidden' class from the install button container
+      divInstall.classList.toggle("hidden", false);
+    });
 
-      butInstall.addEventListener("click", async () => {
-        console.log("👍", "butInstall-clicked");
-        const promptEvent = window.deferredPrompt;
-        if (!promptEvent) {
-          // The deferred prompt isn't available.
-          return;
-        }
-        // Show the install prompt.
-        promptEvent.prompt();
-        // Log the result
-        const result = await promptEvent.userChoice;
-        console.log("👍", "userChoice", result);
-        // Reset the deferred prompt variable, since
-        // prompt() can only be called once.
-        window.deferredPrompt = null;
-        // Hide the install button.
-        divInstall.classList.toggle("hidden", true);
-      });
+    butInstall.addEventListener("click", async () => {
+      console.log("👍", "butInstall-clicked");
+      const promptEvent = window.deferredPrompt;
+      if (!promptEvent) {
+        // The deferred prompt isn't available.
+        return;
+      }
+      // Show the install prompt.
+      promptEvent.prompt();
+      // Log the result
+      const result = await promptEvent.userChoice;
+      console.log("👍", "userChoice", result);
+      // Reset the deferred prompt variable, since
+      // prompt() can only be called once.
+      window.deferredPrompt = null;
+      // Hide the install button.
+      divInstall.classList.toggle("hidden", true);
+    });
 
-      window.addEventListener("appinstalled", (event) => {
-        console.log("👍", "appinstalled", event);
-        // Clear the deferredPrompt so it can be garbage collected
-        window.deferredPrompt = null;
-      });
-    </script>
-  </body>
-  <script src="./js/scripts.js"></script>
+    window.addEventListener("appinstalled", (event) => {
+      console.log("👍", "appinstalled", event);
+      // Clear the deferredPrompt so it can be garbage collected
+      window.deferredPrompt = null;
+    });
+  </script>
+</body>
+<script src="./js/scripts.js"></script>
+
 </html>
