@@ -74,9 +74,12 @@ function search_lab() {
   }
 }
 let searchbar = document.getElementById('searchbar')
-let list = document.getElementById('search')
+var list = document.getElementById('search')
 window.onclick = function(event) {
   if (event.target!= list && event.target!=searchbar) {
     list.style.display = "none";
+  }
+  else{
+    list.style.display = "block";
   }
 }
